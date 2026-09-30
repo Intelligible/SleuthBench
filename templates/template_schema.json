@@ -1,0 +1,300 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SleuthBench Template",
+  "description": "Defines the structure of a SleuthBench question template, including parameterized slots, dataset requirements, and phenomenon injectors.",
+  "type": "object",
+  "required": ["template_id", "category", "answer_format", "business_question", "ds_question", "slots", "phenomena"],
+  "additionalProperties": false,
+  "properties": {
+    "template_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*_v\\d+$",
+      "description": "Unique identifier for this template, conventionally {category_prefix}_{name}_v{version} (e.g. dq_bad_row_indicator_v0)."
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of the injected phenomenon. Not read by template matching or injection, but it is part of the runner's generation fingerprint, so editing it invalidates Stage 1 reuse."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Data Quality",
+        "Feature Contribution"
+      ],
+      "description": "One of the two public benchmark categories: Data Quality (dq_ templates) and Feature Contribution (fc_ templates: feature-importance, shape-function and interaction questions)."
+    },
+    "answer_format": {
+      "type": "string",
+      "enum": ["categorical", "category_label", "column_name", "column_pair", "column_value", "row_id_list", "value"],
+      "description": "Expected format of the ground-truth answer. Stored in QA pairs and passed through to evaluation results."
+    },
+    "business_question": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Business-framed question text presented to the LLM. Use {SLOT_NAME} placeholders resolved from slot assignments; a placeholder matching an upper-cased scalar key of the injector's effects dict (e.g. {FEATURE}) is filled after injection."
+    },
+    "ds_question": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Data-science-framed question text presented to the LLM. Use {SLOT_NAME} placeholders resolved from slot assignments; a placeholder matching an upper-cased scalar key of the injector's effects dict (e.g. {FEATURE}) is filled after injection."
+    },
+    "slots": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/slot" },
+      "description": "Named parameter slots. Keys are slot names referenced in the question via {SLOT_NAME} syntax and in phenomena via param_mapping."
+    },
+    "feature_pool": {
+      "$ref": "#/$defs/feature_pool",
+      "description": "Column exclusion rules used only to count features for the min_feature_count requirement. They do not restrict which columns an injector may select or modify."
+    },
+    "phenomena": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/phenomenon" },
+      "description": "Phenomena to inject. Each entry names an injector and maps its parameters to slot values. Same injector + same resolved params = single instance even if multiple templates reference it."
+    },
+    "requirements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/requirement" },
+      "description": "Dataset compatibility requirements. A template is skipped for datasets that don't meet all requirements."
+    }
+  },
+
+  "$defs": {
+    "kind_enum": {
+      "type": "string",
+      "enum": ["binary", "categorical", "regression", "id_no"],
+      "description": "Column kind as classified in dataset summaries."
+    },
+    "dtype_enum": {
+      "type": "string",
+      "enum": ["bool", "int", "float", "date", "datetime", "string", "mixed", "empty"],
+      "description": "Column data type as classified in dataset summaries."
+    },
+
+    "slot_column": {
+      "type": "object",
+      "description": "A slot that resolves to a dataset column name.",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "column" },
+        "source": {
+          "type": "string",
+          "enum": ["dataset.target"],
+          "description": "Where to source the column. 'dataset.target' binds to the dataset's target column."
+        },
+        "kind_any_of": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/kind_enum" },
+          "minItems": 1,
+          "description": "Column must have one of these kinds to match."
+        },
+        "dtype_any_of": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dtype_enum" },
+          "minItems": 1,
+          "description": "Column must have one of these dtypes to match."
+        },
+        "unique_count_min": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Minimum unique_count recorded in the dataset summary. The summary counts at most 100 sampled values, so thresholds above 100 never match."
+        },
+        "unique_count_max": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Maximum unique_count recorded in the dataset summary (sampled, capped at 100)."
+        }
+      }
+    },
+    "slot_string": {
+      "type": "object",
+      "description": "A slot that resolves to a string value, optionally sourced from a column's values.",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "string" },
+        "source": {
+          "type": "string",
+          "enum": ["column_values"],
+          "description": "Set to 'column_values' to pick a value from the column named by source_column."
+        },
+        "source_column": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of another slot (must be a column slot) whose column's values are sampled. Required when source is 'column_values'."
+        },
+        "position": {
+          "type": "string",
+          "enum": ["random", "middle"],
+          "description": "How to pick a value from the column: 'random' samples uniformly, 'middle' picks the median-positioned value."
+        },
+        "default": {
+          "type": "string",
+          "description": "Default value if no source is specified."
+        }
+      },
+      "if": {
+        "properties": { "source": { "const": "column_values" } },
+        "required": ["source"]
+      },
+      "then": {
+        "required": ["source_column"]
+      }
+    },
+    "slot_int": {
+      "type": "object",
+      "description": "A slot that resolves to an integer value.",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "int" },
+        "default": {
+          "type": "integer",
+          "description": "Default value used when the slot is not explicitly assigned."
+        },
+        "min": {
+          "type": "integer",
+          "description": "Fallback value used when no default is set. Not enforced as a bound."
+        },
+        "max": {
+          "type": "integer",
+          "description": "Documented upper bound; not enforced by the pipeline."
+        }
+      }
+    },
+    "slot_float": {
+      "type": "object",
+      "description": "A slot that resolves to a floating-point value.",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "float" },
+        "default": {
+          "type": "number",
+          "description": "Default value used when the slot is not explicitly assigned."
+        },
+        "min": {
+          "type": "number",
+          "description": "Fallback value used when no default is set. Not enforced as a bound."
+        },
+        "max": {
+          "type": "number",
+          "description": "Documented upper bound; not enforced by the pipeline."
+        }
+      }
+    },
+
+    "slot": {
+      "oneOf": [
+        { "$ref": "#/$defs/slot_column" },
+        { "$ref": "#/$defs/slot_string" },
+        { "$ref": "#/$defs/slot_int" },
+        { "$ref": "#/$defs/slot_float" }
+      ],
+      "description": "A parameter slot, discriminated by the 'type' field."
+    },
+
+    "feature_pool": {
+      "type": "object",
+      "description": "Column exclusion rules used only to count features for the min_feature_count requirement; injectors do not receive them.",
+      "additionalProperties": false,
+      "properties": {
+        "exclude_target": {
+          "type": "boolean",
+          "description": "Whether to exclude the dataset's target column from the feature pool."
+        },
+        "exclude_kinds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/kind_enum" },
+          "description": "Column kinds to exclude from the feature pool."
+        },
+        "exclude_dtypes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dtype_enum" },
+          "description": "Column dtypes to exclude from the feature pool."
+        }
+      }
+    },
+
+    "phenomenon": {
+      "type": "object",
+      "description": "A phenomenon to inject into the dataset.",
+      "required": ["injector"],
+      "additionalProperties": false,
+      "properties": {
+        "injector": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Phenomenon name; it must be registered in src/phenomena/__init__.py PHENOMENA."
+        },
+        "param_mapping": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "description": "Maps injector parameter names to slot values. Use {SLOT_NAME} to reference a slot's resolved value, or a literal string."
+        }
+      }
+    },
+
+    "requirement_min_feature_count": {
+      "type": "object",
+      "description": "Requires at least N features (non-excluded columns) in the dataset.",
+      "required": ["type", "min"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "min_feature_count" },
+        "min": { "type": "integer", "minimum": 1, "description": "Minimum number of features required." }
+      }
+    },
+    "requirement_min_count_by_kind": {
+      "type": "object",
+      "description": "Requires at least N columns of a specific kind.",
+      "required": ["type", "kind", "min"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "min_count_by_kind" },
+        "kind": { "$ref": "#/$defs/kind_enum", "description": "The column kind to count." },
+        "min": { "type": "integer", "minimum": 1, "description": "Minimum number of columns of this kind." }
+      }
+    },
+    "requirement_min_count_by_dtype": {
+      "type": "object",
+      "description": "Requires at least N columns of a specific dtype.",
+      "required": ["type", "dtype", "min"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "min_count_by_dtype" },
+        "dtype": { "$ref": "#/$defs/dtype_enum", "description": "The column dtype to count." },
+        "min": { "type": "integer", "minimum": 1, "description": "Minimum number of columns of this dtype." }
+      }
+    },
+    "requirement_min_count_by_dtype_any_of": {
+      "type": "object",
+      "description": "Requires at least N columns matching any of the listed dtypes.",
+      "required": ["type", "dtypes", "min"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "min_count_by_dtype_any_of" },
+        "dtypes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dtype_enum" },
+          "minItems": 1,
+          "description": "Column dtypes to match (OR logic)."
+        },
+        "min": { "type": "integer", "minimum": 1, "description": "Minimum number of columns matching any listed dtype." }
+      }
+    },
+
+    "requirement": {
+      "oneOf": [
+        { "$ref": "#/$defs/requirement_min_feature_count" },
+        { "$ref": "#/$defs/requirement_min_count_by_kind" },
+        { "$ref": "#/$defs/requirement_min_count_by_dtype" },
+        { "$ref": "#/$defs/requirement_min_count_by_dtype_any_of" }
+      ],
+      "description": "A dataset compatibility requirement, discriminated by the 'type' field."
+    }
+  }
+}

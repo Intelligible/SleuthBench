@@ -1,0 +1,51 @@
+{
+  "template_id": "fc_pairwise_positive_synergy_v0",
+  "description": "Injects a positive interaction in which conditions A and B each have a positive individual effect on the target, and their combination has an additional positive interaction effect.",
+  "category": "Feature Contribution",
+  "answer_format": "column_pair",
+  "business_question": "Which pairs of features behave unexpectedly when considered together? Return the two column names as: column_a, column_b",
+  "ds_question": "What are the two features whose combination has an extra positive effect beyond each individual feature? Return the two column names as: column_a, column_b",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 2
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 1.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_pairwise_interaction",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}",
+        "pattern": "positive_synergy"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 5
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

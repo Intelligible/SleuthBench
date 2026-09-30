@@ -1,0 +1,25 @@
+# Minimal smoke-test config for Stages 1-3; it makes no API calls.
+# See experiments/example.yaml for the full Stage 4-5 configuration surface.
+#
+# Run with:
+#   uv run python src/run_experiment.py experiments/smoke.yaml
+
+name: smoke
+seed: 42
+
+# Smallest standardized dataset for fastest iteration.
+summary: data/standardized/summaries/bike_sharing_100.json
+
+# One template keeps instance count minimal.
+templates:
+  - fc_nonmonotone_peak_v0
+
+# dataset_filter is auto-derived from the summary stem ("bike_sharing_100").
+# Instance isolation comes from the run_id-scoped manifest batch, not from
+# this filter.
+
+# Stop after answer computation.
+skip_eval: true
+skip_grade: true
+
+force: false

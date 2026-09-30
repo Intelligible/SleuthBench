@@ -1,0 +1,55 @@
+{
+  "template_id": "dq_group_evidence_underpowered_v0",
+  "description": "Injects an underpowered two-group comparison. A new categorical feature splits rows into a common group A and an extremely rare group B (assigned at random, target untouched). The observed mean difference may look nonzero, but its 95% CI is wide and includes zero.",
+  "category": "Data Quality",
+  "answer_format": "categorical",
+  "business_question": "For the categorical feature {GROUP_COL}, is the evidence strong enough to say the groups behave differently with respect to {OUTCOME_COL}? Return one of: enough evidence, not enough evidence.",
+  "ds_question": "For categorical feature {GROUP_COL}, is there enough statistical evidence to distinguish group A from group B with respect to {OUTCOME_COL}? Return one of: enough evidence, not enough evidence.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "GROUP_COL": {
+      "type": "string",
+      "default": "subgroup"
+    },
+    "MAX_B_FRAC": {
+      "type": "float",
+      "default": 0.05
+    },
+    "MIN_WIDTH_RATIO": {
+      "type": "float",
+      "default": 1.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_group_evidence_underpowered",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "group_col": "{GROUP_COL}",
+        "max_b_frac": "{MAX_B_FRAC}",
+        "min_width_ratio": "{MIN_WIDTH_RATIO}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 1
+    }
+  ]
+}

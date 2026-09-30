@@ -1,0 +1,51 @@
+{
+  "template_id": "fc_interaction_direction_v0",
+  "description": "Injects a dominant pairwise interaction effect on the outcome. Its direction is the sign of the second feature's relationship with the outcome when the alphabetically first feature is above its median.",
+  "category": "Feature Contribution",
+  "answer_format": "categorical",
+  "business_question": "First find the two columns that reveal the strongest pattern when looked at together, and put their names in alphabetical order. Among records where the first column is in its upper half, does increasing the second usually make {OUTCOME_COL} go up or down? Return exactly: POSITIVE for up or NEGATIVE for down.",
+  "ds_question": "Find the pair of features with the strongest interaction effect on {OUTCOME_COL}. Sort them alphabetically. When the first feature is above its median, does increasing the second feature tend to increase or decrease {OUTCOME_COL}? Return exactly: POSITIVE or NEGATIVE",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 2
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 2.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_interaction_dominant",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}",
+        "require_direction": "true"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 5
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

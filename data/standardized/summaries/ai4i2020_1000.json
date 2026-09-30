@@ -1,0 +1,106 @@
+{
+  "by_kind": {
+    "binary": [
+      "HDF",
+      "Machine failure",
+      "OSF",
+      "PWF",
+      "TWF"
+    ],
+    "categorical": [
+      "Product ID",
+      "RNF",
+      "Type"
+    ],
+    "id_no": [
+      "row_id"
+    ],
+    "regression": [
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Tool wear [min]",
+      "Torque [Nm]",
+      "UDI"
+    ]
+  },
+  "columns": {
+    "Air temperature [K]": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 57
+    },
+    "HDF": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "Machine failure": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "OSF": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "PWF": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "Process temperature [K]": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 46
+    },
+    "Product ID": {
+      "dtype": "string",
+      "kind": "categorical",
+      "unique_count": 100
+    },
+    "RNF": {
+      "dtype": "bool",
+      "kind": "categorical",
+      "unique_count": 1
+    },
+    "Rotational speed [rpm]": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 93
+    },
+    "TWF": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "Tool wear [min]": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 75
+    },
+    "Torque [Nm]": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 89
+    },
+    "Type": {
+      "dtype": "string",
+      "kind": "categorical",
+      "unique_count": 3
+    },
+    "UDI": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 100
+    },
+    "row_id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    }
+  },
+  "dataset": "ai4i2020_1000.csv",
+  "target": "Machine failure"
+}

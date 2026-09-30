@@ -1,0 +1,50 @@
+{
+  "template_id": "fc_interaction_dominant_v0",
+  "description": "Injects a dominant pairwise interaction effect on the outcome.",
+  "category": "Feature Contribution",
+  "answer_format": "column_pair",
+  "business_question": "Which two columns look fairly ordinary when considered separately but reveal the strongest unusual pattern in {OUTCOME_COL} when looked at together? Return the two column names as: column_a, column_b",
+  "ds_question": "Which pair of features has the strongest interaction effect on {OUTCOME_COL}? Return the two column names as: column_a, column_b",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 2
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 2.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_interaction_dominant",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 5
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

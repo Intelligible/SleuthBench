@@ -1,0 +1,10 @@
+data/instances/
+data/archive/
+data/results/
+data/raw/
+outputs/
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.egg-info/

@@ -1,0 +1,50 @@
+{
+  "template_id": "fc_threshold_value_v0",
+  "description": "Injects a threshold/plateau effect into one feature: it influences the outcome up to a point, then its effect levels off.",
+  "category": "Feature Contribution",
+  "answer_format": "column_value",
+  "business_question": "For one column, increasing its value is linked to changes in {OUTCOME_COL} only up to a point. After that, further increases make little difference. Which column is it, and around what value does that happen? Return your answer as: column_name, value",
+  "ds_question": "One feature has a threshold effect on {OUTCOME_COL} — it matters up to a point, then its effect levels off. Which feature, and at approximately what value does the effect plateau? Return your answer as: column_name, value",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 2.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_threshold_value",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 3
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

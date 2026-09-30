@@ -1,0 +1,74 @@
+{
+  "by_kind": {
+    "binary": [],
+    "categorical": [],
+    "id_no": [
+      "row_id"
+    ],
+    "regression": [
+      "AveBedrms",
+      "AveOccup",
+      "AveRooms",
+      "HouseAge",
+      "Latitude",
+      "Longitude",
+      "MedInc",
+      "Population",
+      "target"
+    ]
+  },
+  "columns": {
+    "AveBedrms": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 98
+    },
+    "AveOccup": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 100
+    },
+    "AveRooms": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 100
+    },
+    "HouseAge": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 40
+    },
+    "Latitude": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 82
+    },
+    "Longitude": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 89
+    },
+    "MedInc": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 100
+    },
+    "Population": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 99
+    },
+    "row_id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    },
+    "target": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 88
+    }
+  },
+  "dataset": "california_housing_10000.csv",
+  "target": "target"
+}

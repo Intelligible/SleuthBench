@@ -1,0 +1,38 @@
+{
+  "template_id": "fc_noise_feature_v0",
+  "description": "Permutes the values of one existing numeric feature, breaking its original row-wise relationship with the outcome while preserving its marginal distribution and giving it the lowest binned predictive importance.",
+  "category": "Feature Contribution",
+  "answer_format": "column_name",
+  "business_question": "If we had to remove one number-based column before trying to estimate {OUTCOME_COL}, which one could we remove with the least loss of useful information? Ignore columns used only to identify records. Return a single column name.",
+  "ds_question": "One numeric feature in this dataset has zero predictive importance for {OUTCOME_COL} — it contributes nothing to a predictive model. Which feature is it? Return a single column name.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression", "binary", "categorical"],
+      "dtype_any_of": ["int", "float"]
+    }
+  },
+
+  "feature_pool": {
+    "exclude_kinds": ["id_no"],
+    "exclude_target": true
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_noise_feature",
+      "param_mapping": {
+        "target_col": "{OUTCOME_COL}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 5
+    }
+  ]
+}

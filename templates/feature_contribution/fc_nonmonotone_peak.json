@@ -1,0 +1,50 @@
+{
+  "template_id": "fc_nonmonotone_peak_v0",
+  "description": "Injects an inverted-U relationship into one feature, with the outcome peaking at an interior value and declining on both sides. The ground truth is the peak observed on the modified table (mean argmax of a kernel local-linear and a tricube local-quadratic smoother; integer-valued features round to the nearest integer). The answer is left empty (NO_GOLD) when that observed peak cannot be verified.",
+  "category": "Feature Contribution",
+  "answer_format": "column_value",
+  "business_question": "One column has a sweet spot for {OUTCOME_COL}: results are best around a middle value and worse when the value is either lower or higher. Which column is it, and approximately where is the sweet spot? Return your answer as: column_name, value",
+  "ds_question": "One feature has an inverted-U relationship with {OUTCOME_COL} — performance peaks at a specific value and declines on both sides. Which feature, and at what value is the peak? Return your answer as: column_name, value",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 2.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_nonmonotone_peak",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 3
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

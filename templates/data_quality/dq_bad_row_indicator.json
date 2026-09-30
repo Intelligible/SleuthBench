@@ -1,0 +1,51 @@
+
+{
+  "template_id": "dq_bad_row_indicator_v0",
+  "description": "Injects a binary indicator column that flags corrupted outcome rows (moderate corruption, cap_std=2.0).",
+  "category": "Data Quality",
+  "answer_format": "column_name",
+  "business_question": "Some records have already been marked for review in a yes-or-no column. Which column contains that review marker? Return a single column name.",
+  "ds_question": "You can apply exactly one rule based on a single column to exclude problematic rows before analyzing {OUTCOME_COL}. Which column should the rule be based on? Return a single column name.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["binary", "categorical", "regression"],
+      "dtype_any_of": ["bool", "int", "float", "string"],
+      "unique_count_min": 2
+    },
+    "BAD_FRACTION": {
+      "type": "float",
+      "default": 0.1
+    },
+    "CORRUPTION_CAP_STD": {
+      "type": "float",
+      "default": 2.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_bad_row_indicator",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "bad_fraction": "{BAD_FRACTION}",
+        "corruption_cap_std": "{CORRUPTION_CAP_STD}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 2
+    }
+  ]
+}

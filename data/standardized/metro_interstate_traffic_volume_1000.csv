@@ -1,0 +1,1001 @@
+row_id,holiday,temp,rain_1h,snow_1h,clouds_all,weather_main,weather_description,month,traffic_volume
+1,No Holiday,289.49,0.0,0.0,1,Fog,fog,7,6364
+2,No Holiday,279.35,0.0,0.0,1,Clear,sky is clear,10,2030
+3,No Holiday,291.39,0.0,0.0,36,Clouds,scattered clouds,6,708
+4,No Holiday,294.02,0.0,0.0,90,Thunderstorm,thunderstorm,7,2029
+5,No Holiday,268.69,0.0,0.0,64,Mist,mist,12,3734
+6,No Holiday,302.27,0.0,0.0,75,Clouds,broken clouds,7,4337
+7,No Holiday,277.55,0.0,0.0,75,Clouds,broken clouds,4,5821
+8,No Holiday,267.61,0.0,0.0,1,Clear,sky is clear,2,5710
+9,No Holiday,266.96,0.0,0.0,1,Clear,sky is clear,2,5017
+10,No Holiday,301.91,0.0,0.0,1,Clear,sky is clear,7,3247
+11,No Holiday,291.15,0.0,0.0,90,Rain,light rain,7,873
+12,No Holiday,300.36,0.0,0.0,90,Clouds,overcast clouds,7,6593
+13,No Holiday,279.57,0.0,0.0,90,Drizzle,light intensity drizzle,4,3994
+14,No Holiday,281.21,0.0,0.0,20,Clouds,few clouds,4,3515
+15,No Holiday,293.5,0.3,0.0,1,Rain,light rain,9,255
+16,No Holiday,291.11,0.0,0.0,1,Thunderstorm,proximity thunderstorm,4,3340
+17,No Holiday,296.65,0.0,0.0,1,Clear,sky is clear,5,5869
+18,No Holiday,276.22,0.0,0.0,1,Clear,sky is clear,4,356
+19,No Holiday,255.98,0.0,0.0,20,Clouds,few clouds,2,4775
+20,No Holiday,266.9,0.0,0.0,1,Snow,heavy snow,3,4529
+21,No Holiday,279.28,0.0,0.0,90,Clouds,overcast clouds,4,3082
+22,No Holiday,274.72,0.0,0.0,90,Snow,snow,4,1864
+23,No Holiday,287.95,0.0,0.0,1,Clear,sky is clear,5,4623
+24,No Holiday,285.75,0.0,0.0,1,Clear,sky is clear,10,2865
+25,No Holiday,261.4,0.0,0.0,90,Snow,light snow,12,4716
+26,No Holiday,283.95,0.0,0.0,75,Clouds,broken clouds,10,5770
+27,No Holiday,279.29,0.0,0.0,5,Clear,sky is clear,11,4495
+28,No Holiday,266.11,0.0,0.0,90,Snow,light snow,12,4911
+29,No Holiday,282.78,0.0,0.0,1,Clear,sky is clear,9,342
+30,No Holiday,284.97,0.0,0.0,20,Clouds,few clouds,8,845
+31,No Holiday,261.62,0.0,0.0,90,Mist,mist,12,1906
+32,No Holiday,275.01,0.0,0.0,75,Mist,mist,11,254
+33,No Holiday,273.21,0.0,0.0,90,Mist,mist,3,2713
+34,No Holiday,279.15,0.0,0.0,90,Rain,light rain,4,2418
+35,No Holiday,274.09,0.0,0.0,90,Clouds,overcast clouds,2,6807
+36,No Holiday,279.15,0.0,0.0,20,Clouds,few clouds,4,3451
+37,No Holiday,263.41,0.0,0.0,64,Clouds,broken clouds,12,765
+38,No Holiday,259.01,0.0,0.0,1,Clear,sky is clear,12,2277
+39,No Holiday,289.35,0.0,0.0,90,Mist,mist,8,5014
+40,No Holiday,287.36,0.0,0.0,90,Clouds,overcast clouds,8,4778
+41,No Holiday,298.78,0.0,0.0,40,Clouds,scattered clouds,7,6113
+42,No Holiday,303.6,0.0,0.0,36,Clouds,scattered clouds,7,5407
+43,No Holiday,285.82,2.4,0.0,90,Mist,mist,4,4884
+44,No Holiday,300.61,0.0,0.0,75,Clouds,broken clouds,5,6400
+45,No Holiday,271.74,0.0,0.0,90,Mist,mist,1,5268
+46,No Holiday,262.6,0.0,0.0,90,Snow,heavy snow,2,3126
+47,No Holiday,275.68,0.0,0.0,90,Mist,mist,2,5732
+48,No Holiday,274.08,0.0,0.0,90,Rain,light rain,11,4872
+49,No Holiday,293.88,0.0,0.0,1,Clear,sky is clear,7,697
+50,No Holiday,300.7,1.78,0.0,5,Rain,moderate rain,8,3165
+51,No Holiday,286.53,0.0,0.0,90,Mist,mist,5,1656
+52,No Holiday,279.5,0.0,0.0,90,Clouds,overcast clouds,11,1367
+53,No Holiday,276.36,0.0,0.0,90,Clouds,overcast clouds,12,4434
+54,No Holiday,282.02,0.0,0.0,100,Mist,mist,10,3815
+55,No Holiday,296.43,0.51,0.0,90,Rain,moderate rain,7,3109
+56,No Holiday,274.48,0.0,0.0,90,Snow,light snow,3,710
+57,No Holiday,273.28,0.0,0.0,1,Clear,sky is clear,11,2133
+58,No Holiday,252.75,0.0,0.0,1,Clear,sky is clear,2,521
+59,No Holiday,297.86,0.43,0.0,75,Thunderstorm,proximity thunderstorm with rain,9,1570
+60,No Holiday,301.44,0.0,0.0,75,Clouds,broken clouds,7,3535
+61,No Holiday,292.58,0.0,0.0,75,Clouds,broken clouds,8,5806
+62,No Holiday,305.17,0.0,0.0,40,Clouds,scattered clouds,9,5907
+63,No Holiday,302.12,0.0,0.0,40,Clouds,scattered clouds,9,5953
+64,No Holiday,292.94,0.0,0.0,1,Mist,mist,8,868
+65,No Holiday,274.94,0.0,0.0,90,Drizzle,drizzle,3,1150
+66,No Holiday,284.95,0.0,0.0,20,Clouds,few clouds,4,4946
+67,No Holiday,294.67,0.0,0.0,80,Clouds,broken clouds,9,2536
+68,No Holiday,286.95,2.79,0.0,75,Mist,mist,5,441
+69,No Holiday,292.79,0.0,0.0,1,Fog,fog,7,437
+70,No Holiday,265.14,0.0,0.0,64,Clouds,broken clouds,12,5609
+71,No Holiday,290.0,0.0,0.0,1,Clear,sky is clear,7,404
+72,No Holiday,252.77,0.0,0.0,1,Clear,sky is clear,2,294
+73,No Holiday,272.3,0.0,0.0,40,Clouds,scattered clouds,11,3619
+74,No Holiday,254.95,0.0,0.0,5,Clear,sky is clear,1,3178
+75,No Holiday,296.36,0.0,0.0,5,Clear,sky is clear,5,6888
+76,No Holiday,287.14,0.0,0.0,0,Clear,Sky is Clear,8,1885
+77,No Holiday,269.42,0.0,0.0,64,Mist,mist,12,514
+78,No Holiday,277.1,0.0,0.0,99,Rain,light rain,11,5527
+79,No Holiday,291.15,0.0,0.0,20,Mist,mist,5,654
+80,No Holiday,295.01,0.0,0.0,75,Clouds,broken clouds,5,3997
+81,No Holiday,271.15,0.0,0.0,1,Clear,sky is clear,12,721
+82,No Holiday,277.65,0.0,0.0,40,Clouds,scattered clouds,3,2100
+83,No Holiday,269.08,0.0,0.0,40,Clouds,scattered clouds,12,5354
+84,No Holiday,288.7,0.0,0.0,92,Rain,light rain,9,854
+85,No Holiday,296.01,0.0,0.0,1,Clear,sky is clear,7,2056
+86,No Holiday,278.13,0.91,0.0,40,Rain,light rain,4,6347
+87,No Holiday,295.78,0.0,0.0,40,Clouds,scattered clouds,7,2883
+88,No Holiday,262.31,0.0,0.0,90,Mist,mist,12,789
+89,No Holiday,294.94,0.0,0.0,90,Clouds,overcast clouds,7,823
+90,No Holiday,273.93,0.0,0.0,90,Clouds,overcast clouds,4,4714
+91,No Holiday,291.14,0.0,0.0,75,Clouds,broken clouds,10,4918
+92,No Holiday,280.0,0.0,0.0,90,Mist,mist,4,971
+93,No Holiday,299.45,0.0,0.0,1,Clear,sky is clear,6,4147
+94,No Holiday,295.14,0.0,0.0,40,Clouds,scattered clouds,7,6234
+95,No Holiday,291.3,0.0,0.0,40,Clouds,scattered clouds,6,4426
+96,No Holiday,291.38,0.0,0.0,1,Clear,sky is clear,8,2920
+97,No Holiday,290.23,0.43,0.0,90,Mist,mist,8,4954
+98,No Holiday,294.36,0.0,0.0,20,Rain,moderate rain,6,3514
+99,No Holiday,280.86,0.0,0.0,1,Clear,sky is clear,5,4922
+100,No Holiday,282.15,0.0,0.0,75,Clouds,broken clouds,4,3454
+101,No Holiday,272.75,0.0,0.0,90,Snow,snow,4,4513
+102,No Holiday,270.74,0.0,0.0,90,Snow,snow,12,285
+103,No Holiday,249.3,0.0,0.0,5,Clear,sky is clear,1,4565
+104,No Holiday,260.01,0.0,0.0,1,Clear,sky is clear,2,1545
+105,No Holiday,267.68,0.0,0.0,90,Snow,light snow,12,6042
+106,No Holiday,279.47,0.0,0.0,40,Clouds,scattered clouds,3,5714
+107,No Holiday,261.79,0.0,0.0,90,Haze,haze,2,4724
+108,No Holiday,294.58,0.0,0.0,75,Clouds,broken clouds,8,4729
+109,No Holiday,270.969,0.0,0.0,0,Clear,Sky is Clear,10,5186
+110,No Holiday,268.71,0.0,0.0,0,Clear,sky is clear,1,542
+111,No Holiday,279.59,0.0,0.0,75,Clouds,broken clouds,11,5446
+112,No Holiday,272.08,0.0,0.0,90,Haze,haze,2,4412
+113,No Holiday,298.39,1.02,0.0,90,Haze,haze,8,4494
+114,No Holiday,297.83,0.0,0.0,75,Clouds,broken clouds,6,4996
+115,No Holiday,261.88,0.0,0.0,90,Snow,light snow,12,4480
+116,No Holiday,294.34,0.0,0.0,75,Clouds,broken clouds,7,2451
+117,No Holiday,282.63,0.25,0.0,1,Fog,fog,6,414
+118,No Holiday,286.65,0.25,0.0,90,Rain,light rain,9,234
+119,No Holiday,291.76,16.38,0.0,76,Rain,very heavy rain,6,635
+120,No Holiday,292.01,0.0,0.0,90,Mist,mist,6,6414
+121,No Holiday,253.86,0.0,0.0,40,Clouds,scattered clouds,1,325
+122,No Holiday,286.79,0.0,0.0,90,Fog,fog,8,6038
+123,No Holiday,293.46,0.0,0.0,1,Clear,sky is clear,7,1191
+124,No Holiday,284.276,0.0,0.0,92,Clouds,overcast clouds,10,2857
+125,No Holiday,296.35,0.0,0.0,1,Clear,sky is clear,8,1282
+126,No Holiday,249.61,0.0,0.0,5,Clear,sky is clear,12,2483
+127,No Holiday,292.56,0.0,0.0,0,Clear,Sky is Clear,7,1199
+128,No Holiday,273.95,0.0,0.0,90,Fog,fog,11,903
+129,No Holiday,292.21,0.0,0.0,1,Clear,sky is clear,5,4047
+130,No Holiday,267.51,0.0,0.0,90,Clouds,overcast clouds,11,4549
+131,No Holiday,260.53,0.0,0.0,1,Clear,sky is clear,2,5206
+132,No Holiday,280.562,0.0,0.0,0,Clear,Sky is Clear,10,2646
+133,No Holiday,256.35,0.0,0.0,40,Snow,light snow,1,494
+134,No Holiday,289.36,0.0,0.0,92,Clouds,overcast clouds,7,2929
+135,No Holiday,271.15,0.0,0.0,40,Clouds,scattered clouds,11,4556
+136,No Holiday,290.08,0.0,0.0,1,Clear,sky is clear,8,3893
+137,No Holiday,287.44,0.0,0.0,90,Rain,light rain,5,4888
+138,No Holiday,265.33,0.0,0.0,1,Clear,sky is clear,3,4906
+139,No Holiday,282.248,0.0,0.0,76,Clouds,broken clouds,5,4746
+140,No Holiday,271.72,0.0,0.0,1,Mist,mist,1,480
+141,No Holiday,273.02,0.0,0.0,90,Haze,haze,1,400
+142,No Holiday,274.39,0.0,0.0,90,Mist,mist,4,4820
+143,No Holiday,302.5,0.0,0.0,75,Clouds,broken clouds,7,2050
+144,No Holiday,284.58,0.0,0.0,90,Mist,mist,5,5457
+145,No Holiday,276.69,0.0,0.0,1,Clear,sky is clear,3,3656
+146,No Holiday,289.15,0.0,0.0,90,Mist,mist,9,4804
+147,No Holiday,289.74,0.0,0.0,1,Clear,sky is clear,8,424
+148,No Holiday,261.54,0.0,0.0,1,Clear,sky is clear,1,3121
+149,No Holiday,281.79,0.0,0.0,1,Clear,sky is clear,9,2608
+150,No Holiday,279.41,0.25,0.0,40,Rain,light rain,5,344
+151,No Holiday,291.88,0.0,0.0,90,Mist,mist,10,5599
+152,No Holiday,287.82,0.0,0.0,1,Clear,sky is clear,7,488
+153,No Holiday,275.62,0.0,0.0,90,Mist,mist,1,5184
+154,No Holiday,272.89,0.0,0.0,75,Clouds,broken clouds,12,5962
+155,No Holiday,280.15,0.0,0.0,90,Drizzle,light intensity drizzle,4,1083
+156,No Holiday,265.81,0.0,0.0,90,Clouds,overcast clouds,1,1424
+157,No Holiday,293.55,0.0,0.0,90,Clouds,overcast clouds,9,4632
+158,No Holiday,275.72,0.0,0.0,40,Clouds,scattered clouds,2,5072
+159,No Holiday,280.52,0.0,0.0,90,Clouds,overcast clouds,4,3611
+160,No Holiday,269.37,0.0,0.0,1,Clear,sky is clear,3,4272
+161,No Holiday,269.71,0.0,0.0,0,Clear,sky is clear,12,2483
+162,No Holiday,288.48,0.0,0.0,90,Rain,moderate rain,4,3223
+163,No Holiday,284.0,0.0,0.0,1,Clear,sky is clear,9,297
+164,No Holiday,269.81,0.0,0.0,75,Snow,light snow,2,3977
+165,No Holiday,295.01,1.6,0.0,90,Rain,heavy intensity rain,9,5494
+166,No Holiday,276.82,0.0,0.0,90,Mist,mist,5,4711
+167,No Holiday,283.08,0.0,0.0,90,Mist,mist,3,351
+168,No Holiday,276.84,0.0,0.0,90,Rain,light rain,4,6723
+169,No Holiday,273.74,0.0,0.13,90,Snow,light snow,1,6438
+170,No Holiday,274.65,0.0,0.0,90,Clouds,overcast clouds,2,5248
+171,No Holiday,255.38,0.0,0.0,20,Haze,haze,1,3892
+172,No Holiday,261.22,0.0,0.0,90,Clouds,overcast clouds,2,3197
+173,No Holiday,299.48,0.0,0.0,1,Clear,sky is clear,8,4494
+174,No Holiday,271.4,0.0,0.0,90,Clouds,overcast clouds,3,5809
+175,No Holiday,272.15,0.0,0.0,1,Clear,sky is clear,11,468
+176,No Holiday,272.77,0.0,0.0,90,Snow,snow,11,5406
+177,No Holiday,288.66,0.0,0.0,1,Clear,sky is clear,10,4652
+178,No Holiday,293.28,0.0,0.0,20,Clouds,few clouds,7,3108
+179,No Holiday,275.11,0.0,0.0,64,Clouds,broken clouds,1,1306
+180,No Holiday,290.91,0.0,0.0,0,Clear,Sky is Clear,7,2186
+181,No Holiday,269.21,0.0,0.0,90,Mist,mist,2,5252
+182,No Holiday,273.35,0.0,0.0,1,Clear,sky is clear,3,5432
+183,No Holiday,266.84,0.0,0.0,90,Snow,heavy snow,2,545
+184,No Holiday,252.53,0.0,0.0,1,Clear,sky is clear,12,274
+185,No Holiday,279.25,0.0,0.0,1,Clear,sky is clear,5,367
+186,No Holiday,280.39,0.0,0.0,1,Clear,sky is clear,11,1898
+187,No Holiday,286.64,0.38,0.0,90,Rain,light rain,10,4853
+188,No Holiday,297.34,0.0,0.0,90,Drizzle,drizzle,9,3518
+189,No Holiday,293.02,0.0,0.0,1,Clear,sky is clear,9,6423
+190,No Holiday,266.86,0.0,0.0,90,Clouds,overcast clouds,11,5311
+191,No Holiday,261.86,0.0,0.0,90,Clouds,overcast clouds,2,3094
+192,No Holiday,301.68,0.0,0.0,40,Clouds,scattered clouds,9,4159
+193,No Holiday,292.08,0.0,0.0,5,Clear,sky is clear,8,1798
+194,No Holiday,254.89,0.0,0.0,64,Clouds,broken clouds,12,2183
+195,No Holiday,269.15,0.0,0.0,1,Clear,sky is clear,11,2070
+196,No Holiday,294.15,0.0,0.0,1,Rain,heavy intensity rain,8,668
+197,No Holiday,286.82,0.0,0.0,1,Clear,sky is clear,5,6583
+198,No Holiday,272.9,0.0,0.0,90,Clouds,overcast clouds,2,4655
+199,No Holiday,275.22,0.0,0.0,90,Clouds,overcast clouds,4,6291
+200,No Holiday,257.54,0.0,0.0,1,Clear,sky is clear,3,5183
+201,No Holiday,295.28,0.0,0.0,5,Clear,sky is clear,6,4978
+202,No Holiday,275.15,0.0,0.0,90,Rain,light rain,11,309
+203,No Holiday,274.15,0.0,0.0,90,Snow,light snow,11,5266
+204,No Holiday,270.62,0.0,0.0,64,Clouds,broken clouds,11,548
+205,No Holiday,275.2,0.0,0.0,40,Clouds,scattered clouds,4,4904
+206,No Holiday,292.57,0.0,0.0,90,Thunderstorm,thunderstorm with heavy rain,10,3013
+207,No Holiday,271.65,0.0,0.0,1,Mist,mist,11,474
+208,No Holiday,302.21,0.0,0.0,40,Clouds,scattered clouds,7,5153
+209,No Holiday,284.69,0.0,0.0,92,Mist,mist,6,321
+210,No Holiday,299.53,0.0,0.0,20,Clouds,few clouds,6,3536
+211,No Holiday,296.87,0.25,0.0,75,Rain,light rain,5,4754
+212,No Holiday,275.35,0.0,0.0,75,Clouds,broken clouds,2,4676
+213,No Holiday,272.58,0.0,0.0,90,Mist,mist,4,571
+214,No Holiday,278.83,0.0,0.0,1,Clear,sky is clear,9,5798
+215,No Holiday,266.65,0.0,0.0,40,Clouds,scattered clouds,2,3974
+216,No Holiday,279.11,0.0,0.0,1,Clear,sky is clear,9,2838
+217,No Holiday,275.42,0.0,0.0,75,Clouds,broken clouds,3,950
+218,No Holiday,249.65,0.0,0.0,1,Clear,sky is clear,1,647
+219,No Holiday,290.62,0.0,0.0,90,Mist,mist,8,362
+220,No Holiday,296.71,0.0,0.0,1,Clear,sky is clear,8,3422
+221,No Holiday,273.95,0.0,0.0,90,Haze,haze,12,3001
+222,No Holiday,279.5,0.0,0.0,75,Clouds,broken clouds,11,7107
+223,No Holiday,267.15,0.0,0.0,1,Clear,sky is clear,12,635
+224,No Holiday,272.36,0.0,0.0,90,Fog,fog,1,3066
+225,No Holiday,285.83,0.0,0.0,75,Clouds,broken clouds,7,1253
+226,No Holiday,265.05,0.0,0.0,75,Snow,heavy snow,1,3991
+227,No Holiday,258.83,0.0,0.0,64,Clouds,broken clouds,12,5792
+228,No Holiday,250.91,0.0,0.0,100,Clouds,overcast clouds,2,2337
+229,No Holiday,291.16,0.0,0.0,1,Clear,sky is clear,9,1028
+230,No Holiday,292.22,0.0,0.0,1,Mist,mist,5,893
+231,No Holiday,285.01,0.0,0.0,1,Clear,sky is clear,8,880
+232,No Holiday,270.71,0.0,0.0,64,Clouds,broken clouds,11,5276
+233,No Holiday,289.6,4.04,0.0,90,Mist,mist,9,1047
+234,No Holiday,259.95,0.0,0.0,75,Clouds,broken clouds,1,4388
+235,No Holiday,268.02,0.0,0.0,90,Mist,mist,4,353
+236,No Holiday,297.75,0.0,0.0,12,Rain,light rain,8,3006
+237,No Holiday,259.53,0.0,0.0,5,Clear,sky is clear,1,2251
+238,No Holiday,286.58,0.0,0.0,40,Clouds,scattered clouds,4,5355
+239,No Holiday,284.75,0.0,0.0,1,Haze,haze,5,387
+240,No Holiday,264.29,0.0,0.0,1,Clear,sky is clear,2,310
+241,No Holiday,298.48,0.0,0.0,1,Clear,sky is clear,7,3620
+242,No Holiday,291.31,0.0,0.0,1,Clear,sky is clear,5,5690
+243,No Holiday,287.35,0.51,0.0,44,Rain,light rain,10,812
+244,No Holiday,260.22,0.0,0.0,1,Clear,sky is clear,3,345
+245,No Holiday,297.38,1.52,0.0,1,Mist,mist,9,310
+246,No Holiday,302.93,0.0,0.0,0,Clear,Sky is Clear,7,4879
+247,No Holiday,287.08,0.0,0.0,0,Clear,Sky is Clear,9,862
+248,No Holiday,287.58,1.0,0.0,68,Rain,light rain,6,763
+249,No Holiday,291.96,0.0,0.0,90,Clouds,overcast clouds,7,5799
+250,No Holiday,264.44,0.0,0.0,90,Snow,light snow,12,838
+251,No Holiday,250.02,0.0,0.0,20,Clouds,few clouds,2,4680
+252,No Holiday,290.35,0.0,0.0,5,Clear,sky is clear,8,1728
+253,No Holiday,290.82,0.64,0.0,90,Mist,mist,5,5406
+254,No Holiday,268.26,0.0,0.0,90,Mist,mist,12,2549
+255,No Holiday,274.15,0.0,0.0,90,Mist,mist,12,2494
+256,No Holiday,271.15,0.0,0.0,90,Mist,mist,4,836
+257,No Holiday,288.38,0.0,0.0,90,Rain,light rain,9,2498
+258,No Holiday,273.88,0.0,0.0,90,Drizzle,light intensity drizzle,2,770
+259,No Holiday,283.54,0.0,0.0,40,Clouds,scattered clouds,9,5066
+260,No Holiday,290.87,0.0,0.0,40,Mist,mist,5,258
+261,No Holiday,274.09,0.0,0.0,90,Mist,mist,11,973
+262,No Holiday,297.981,0.0,0.0,44,Clouds,scattered clouds,8,4416
+263,No Holiday,274.22,0.0,0.0,1,Clear,sky is clear,12,1479
+264,No Holiday,303.36,0.0,0.0,40,Clouds,scattered clouds,7,3608
+265,No Holiday,292.22,0.0,0.0,1,Mist,mist,8,1569
+266,No Holiday,296.69,0.0,0.0,40,Clouds,scattered clouds,4,3125
+267,No Holiday,268.36,0.0,0.0,1,Clear,sky is clear,12,5581
+268,No Holiday,276.46,0.25,0.0,1,Rain,light rain,3,4917
+269,No Holiday,288.957,0.0,0.0,24,Clouds,few clouds,10,2854
+270,No Holiday,291.02,8.89,0.0,40,Rain,heavy intensity rain,6,626
+271,No Holiday,296.15,0.0,0.0,40,Clouds,scattered clouds,7,3249
+272,No Holiday,294.22,0.0,0.0,40,Clouds,scattered clouds,9,293
+273,No Holiday,296.15,0.0,0.0,40,Clouds,scattered clouds,6,5066
+274,No Holiday,290.6,0.6,0.0,36,Rain,light rain,6,686
+275,No Holiday,286.87,0.0,0.0,1,Clear,sky is clear,9,1018
+276,No Holiday,271.0,0.0,0.0,90,Snow,heavy snow,2,807
+277,No Holiday,295.41,0.0,0.0,20,Clouds,few clouds,7,1816
+278,No Holiday,302.27,0.0,0.0,40,Clouds,scattered clouds,7,6023
+279,No Holiday,278.09,0.0,0.0,1,Clear,sky is clear,4,350
+280,No Holiday,266.94,0.0,0.0,1,Clear,sky is clear,3,376
+281,No Holiday,289.69,0.0,0.0,1,Mist,mist,7,957
+282,No Holiday,277.86,0.0,0.0,90,Clouds,overcast clouds,12,3619
+283,No Holiday,295.28,0.0,0.0,75,Mist,mist,7,5288
+284,No Holiday,271.09,0.0,0.0,75,Snow,light snow,2,321
+285,No Holiday,293.0,0.0,0.0,20,Clouds,few clouds,4,5005
+286,No Holiday,291.36,0.0,0.0,0,Clear,Sky is Clear,8,1415
+287,No Holiday,290.49,0.0,0.0,40,Clouds,scattered clouds,4,5789
+288,No Holiday,293.85,0.25,0.0,20,Fog,fog,9,2066
+289,No Holiday,282.35,0.0,0.0,100,Drizzle,drizzle,10,4339
+290,No Holiday,255.08,0.0,0.0,1,Snow,light snow,2,4967
+291,No Holiday,284.62,0.0,0.0,40,Clouds,scattered clouds,5,2845
+292,No Holiday,273.02,0.0,0.0,1,Clear,sky is clear,2,2208
+293,No Holiday,260.53,0.0,0.0,90,Snow,light snow,12,291
+294,No Holiday,276.87,0.0,0.0,1,Clear,sky is clear,2,4775
+295,No Holiday,275.08,0.0,0.0,40,Clouds,scattered clouds,3,751
+296,No Holiday,283.16,0.0,0.0,20,Rain,light rain,10,5476
+297,No Holiday,269.79,0.0,0.0,90,Fog,fog,4,1881
+298,No Holiday,298.25,0.0,0.0,1,Clear,sky is clear,9,6074
+299,No Holiday,279.48,0.0,0.0,20,Clouds,few clouds,1,5029
+300,No Holiday,296.23,0.55,0.0,40,Rain,moderate rain,6,4416
+301,No Holiday,269.04,0.0,0.0,90,Clouds,overcast clouds,11,4924
+302,No Holiday,294.72,0.48,0.0,90,Rain,light rain,5,3881
+303,No Holiday,299.73,0.0,0.0,1,Clear,sky is clear,5,3796
+304,No Holiday,285.91,0.3,0.0,90,Mist,mist,5,749
+305,No Holiday,285.65,0.0,0.0,75,Clouds,broken clouds,11,4083
+306,No Holiday,272.02,0.0,0.0,20,Clouds,few clouds,11,3613
+307,No Holiday,256.41,0.0,0.0,64,Clouds,broken clouds,1,2891
+308,No Holiday,287.21,0.0,0.0,1,Clear,sky is clear,8,5668
+309,No Holiday,294.84,0.0,0.0,90,Rain,moderate rain,6,365
+310,No Holiday,284.68,0.64,0.0,1,Mist,mist,5,255
+311,No Holiday,257.63,0.0,0.0,75,Clouds,broken clouds,2,309
+312,No Holiday,302.69,0.0,0.0,0,Clear,Sky is Clear,7,3288
+313,No Holiday,284.08,0.0,0.0,90,Rain,light rain,4,4381
+314,No Holiday,285.86,0.0,0.0,1,Clear,sky is clear,5,5140
+315,No Holiday,274.08,0.0,0.0,90,Mist,mist,12,480
+316,No Holiday,302.47,0.0,0.0,20,Clouds,few clouds,7,5555
+317,No Holiday,285.215,0.0,0.0,48,Clouds,scattered clouds,2,1580
+318,No Holiday,270.7,0.0,0.0,90,Clouds,overcast clouds,4,6037
+319,No Holiday,290.08,0.25,0.0,90,Mist,mist,8,400
+320,No Holiday,288.35,0.0,0.0,90,Rain,moderate rain,5,4840
+321,No Holiday,270.88,0.0,0.0,1,Clear,sky is clear,4,5373
+322,No Holiday,256.94,0.0,0.0,90,Clouds,overcast clouds,2,520
+323,No Holiday,271.76,0.0,0.0,90,Mist,mist,4,3766
+324,No Holiday,285.15,0.0,0.0,1,Clear,sky is clear,3,4365
+325,No Holiday,290.02,0.25,0.0,90,Rain,moderate rain,8,581
+326,No Holiday,268.96,0.0,0.0,75,Snow,light snow,12,4306
+327,No Holiday,270.77,0.0,0.0,64,Clouds,broken clouds,1,598
+328,No Holiday,291.57,0.0,0.0,32,Rain,light rain,7,4414
+329,No Holiday,291.02,4.18,0.0,90,Thunderstorm,thunderstorm with rain,7,4972
+330,No Holiday,290.68,0.0,0.0,75,Rain,light rain,6,3260
+331,No Holiday,274.82,0.0,0.0,90,Snow,light snow,11,5425
+332,No Holiday,293.84,0.0,0.0,1,Mist,mist,8,687
+333,No Holiday,267.28,0.0,0.0,90,Snow,light snow,12,1441
+334,No Holiday,255.15,0.0,0.0,1,Clear,sky is clear,2,1660
+335,No Holiday,266.26,0.0,0.0,90,Clouds,overcast clouds,2,5016
+336,No Holiday,291.36,0.0,0.0,75,Clouds,broken clouds,6,308
+337,No Holiday,294.23,0.0,0.0,40,Mist,mist,8,2903
+338,No Holiday,292.04,0.0,0.0,90,Drizzle,light intensity drizzle,5,727
+339,No Holiday,288.99,0.0,0.0,75,Mist,mist,8,2986
+340,No Holiday,266.92,0.0,0.0,90,Snow,light snow,4,5211
+341,No Holiday,263.4,0.0,0.0,90,Mist,mist,12,691
+342,No Holiday,294.56,0.0,0.0,90,Clouds,overcast clouds,7,680
+343,No Holiday,272.22,0.0,0.0,1,Fog,fog,11,1574
+344,No Holiday,298.58,0.0,0.0,75,Clouds,broken clouds,8,5312
+345,No Holiday,277.353,0.0,0.0,8,Clear,sky is clear,2,4915
+346,No Holiday,296.55,0.0,0.0,36,Rain,light rain,6,5948
+347,No Holiday,256.62,0.0,0.0,40,Clouds,scattered clouds,2,4254
+348,No Holiday,291.58,0.0,0.0,0,Clear,Sky is Clear,8,660
+349,No Holiday,294.92,0.0,0.0,1,Clear,sky is clear,5,2975
+350,No Holiday,287.09,0.0,0.0,90,Mist,mist,10,5777
+351,No Holiday,259.86,0.0,0.0,0,Clear,sky is clear,1,5979
+352,No Holiday,254.96,0.0,0.0,1,Haze,haze,1,545
+353,No Holiday,279.76,0.0,0.0,90,Drizzle,light intensity drizzle,4,592
+354,No Holiday,285.97,0.0,0.0,40,Clouds,scattered clouds,8,2824
+355,No Holiday,295.59,0.0,0.0,40,Clouds,scattered clouds,6,1388
+356,No Holiday,291.5,0.0,0.0,75,Mist,mist,8,463
+357,No Holiday,260.59,0.0,0.0,100,Clouds,overcast clouds,1,4543
+358,No Holiday,277.01,0.0,0.0,75,Rain,light rain,10,1661
+359,No Holiday,284.35,0.0,0.0,90,Rain,moderate rain,3,4296
+360,No Holiday,275.08,0.0,0.0,90,Snow,light snow,10,317
+361,No Holiday,285.57,1.02,0.0,90,Rain,moderate rain,4,1734
+362,No Holiday,272.85,0.0,0.0,90,Mist,mist,1,4799
+363,No Holiday,289.27,0.25,0.0,90,Haze,haze,9,4980
+364,No Holiday,274.17,0.0,0.0,8,Clear,sky is clear,2,952
+365,No Holiday,302.67,0.0,0.0,8,Clear,sky is clear,7,2982
+366,No Holiday,272.54,0.0,0.0,90,Snow,light snow,1,2842
+367,No Holiday,269.62,0.0,0.0,40,Clouds,scattered clouds,3,3826
+368,No Holiday,265.94,0.0,0.0,1,Clear,sky is clear,11,252
+369,No Holiday,294.73,0.0,0.0,20,Clouds,few clouds,6,4806
+370,No Holiday,255.72,0.0,0.0,75,Clouds,broken clouds,1,4238
+371,No Holiday,272.46,0.0,0.0,1,Clear,sky is clear,11,1139
+372,No Holiday,290.22,0.0,0.0,1,Clear,sky is clear,7,1043
+373,No Holiday,296.43,0.0,0.0,75,Thunderstorm,thunderstorm with rain,9,6778
+374,No Holiday,280.9,0.0,0.0,90,Clouds,overcast clouds,4,684
+375,No Holiday,273.55,0.0,0.0,90,Clouds,overcast clouds,3,556
+376,No Holiday,253.9,0.0,0.0,1,Clear,sky is clear,12,2846
+377,No Holiday,293.82,0.0,0.0,5,Clear,sky is clear,7,2640
+378,No Holiday,270.01,0.0,0.0,1,Clear,sky is clear,11,5784
+379,No Holiday,301.95,0.0,0.0,0,Clear,Sky is Clear,6,5131
+380,No Holiday,285.65,0.0,0.0,90,Clouds,overcast clouds,5,706
+381,No Holiday,257.89,0.0,0.0,40,Clouds,scattered clouds,1,5891
+382,No Holiday,296.15,0.0,0.0,1,Clear,sky is clear,7,1189
+383,No Holiday,252.77,0.0,0.0,100,Clouds,overcast clouds,2,627
+384,No Holiday,287.61,0.0,0.0,90,Drizzle,light intensity drizzle,9,4506
+385,No Holiday,273.27,0.0,0.0,40,Clouds,scattered clouds,2,2640
+386,No Holiday,272.35,0.0,0.0,75,Mist,mist,1,216
+387,No Holiday,276.05,0.0,0.0,90,Mist,mist,1,3789
+388,No Holiday,290.04,0.0,0.0,1,Clear,sky is clear,5,389
+389,No Holiday,275.83,0.0,0.0,90,Clouds,overcast clouds,4,4497
+390,No Holiday,295.209,0.0,0.0,92,Rain,light rain,7,2456
+391,No Holiday,284.95,0.47,0.0,68,Mist,mist,5,2404
+392,No Holiday,278.88,0.0,0.0,1,Clear,sky is clear,11,377
+393,No Holiday,269.93,0.0,0.0,93,Clouds,overcast clouds,12,291
+394,No Holiday,289.33,0.0,0.0,1,Clear,sky is clear,4,390
+395,No Holiday,258.39,0.0,0.0,90,Clouds,overcast clouds,12,4285
+396,No Holiday,274.71,0.0,0.0,90,Clouds,overcast clouds,12,6364
+397,No Holiday,293.63,0.0,0.0,0,Clear,Sky is Clear,8,4322
+398,No Holiday,278.89,0.0,0.0,90,Rain,moderate rain,11,5719
+399,No Holiday,299.94,0.0,0.0,40,Clouds,scattered clouds,8,6138
+400,No Holiday,273.22,0.0,0.0,90,Rain,light rain,4,1773
+401,No Holiday,258.17,0.25,0.0,64,Rain,light rain,1,1922
+402,No Holiday,273.21,0.0,0.0,90,Snow,heavy snow,4,4755
+403,No Holiday,269.09,0.0,0.0,90,Mist,mist,1,4878
+404,No Holiday,275.35,0.0,0.0,1,Clear,sky is clear,3,223
+405,No Holiday,290.78,0.0,0.0,40,Clouds,scattered clouds,8,6027
+406,No Holiday,296.76,0.25,0.0,90,Rain,light rain,9,4110
+407,No Holiday,263.75,0.0,0.0,75,Clouds,broken clouds,1,769
+408,No Holiday,274.29,0.0,0.0,1,Haze,haze,2,4931
+409,No Holiday,271.95,0.0,0.0,90,Clouds,overcast clouds,2,555
+410,No Holiday,248.13,0.0,0.0,1,Clear,sky is clear,12,4504
+411,No Holiday,295.87,0.0,0.0,0,Clear,Sky is Clear,7,5193
+412,No Holiday,294.75,0.0,0.0,40,Thunderstorm,proximity thunderstorm,9,3206
+413,No Holiday,278.07,1.69,0.0,90,Mist,mist,5,5340
+414,No Holiday,277.76,0.0,0.0,1,Clear,sky is clear,11,6049
+415,No Holiday,287.76,0.0,0.0,90,Clouds,overcast clouds,8,293
+416,No Holiday,294.22,0.0,0.0,1,Clear,sky is clear,8,5311
+417,No Holiday,291.86,0.0,0.0,64,Rain,light rain,10,4452
+418,No Holiday,279.26,0.0,0.0,1,Clear,sky is clear,10,368
+419,No Holiday,273.31,0.0,0.0,20,Clouds,few clouds,11,2929
+420,No Holiday,278.09,0.0,0.0,1,Clear,sky is clear,3,5686
+421,No Holiday,272.82,0.0,0.0,1,Mist,mist,1,1662
+422,No Holiday,275.21,0.0,0.0,75,Rain,moderate rain,11,326
+423,No Holiday,287.46,0.0,0.0,0,Clear,Sky is Clear,7,310
+424,No Holiday,255.22,0.0,0.0,1,Clear,sky is clear,12,2409
+425,No Holiday,275.15,0.0,0.0,1,Haze,haze,11,329
+426,No Holiday,274.42,0.0,0.0,64,Fog,fog,12,4524
+427,No Holiday,261.72,0.0,0.0,90,Mist,mist,12,425
+428,No Holiday,289.43,0.0,0.0,1,Clear,sky is clear,7,1842
+429,No Holiday,285.91,0.7,0.0,90,Drizzle,drizzle,5,3243
+430,No Holiday,286.14,0.25,0.0,92,Rain,moderate rain,5,4295
+431,No Holiday,262.62,0.0,0.0,1,Clear,sky is clear,11,303
+432,No Holiday,274.28,0.0,0.0,75,Clouds,broken clouds,11,1728
+433,No Holiday,286.62,0.0,0.0,1,Clear,sky is clear,8,372
+434,No Holiday,296.18,0.0,0.0,1,Clear,sky is clear,9,4459
+435,No Holiday,254.55,0.0,0.0,1,Clear,sky is clear,1,245
+436,No Holiday,295.61,0.0,0.0,75,Rain,light rain,6,3551
+437,No Holiday,267.5,0.0,0.0,90,Mist,mist,1,4823
+438,No Holiday,280.02,0.0,0.0,90,Clouds,overcast clouds,4,4539
+439,No Holiday,257.96,0.0,0.0,64,Clouds,broken clouds,1,305
+440,No Holiday,258.78,0.0,0.0,64,Clouds,broken clouds,1,4435
+441,No Holiday,290.1,0.0,0.0,1,Mist,mist,5,2668
+442,No Holiday,287.27,0.0,0.0,1,Clear,sky is clear,6,428
+443,No Holiday,268.41,0.0,0.0,90,Snow,heavy snow,12,1684
+444,No Holiday,268.12,0.0,0.0,90,Snow,heavy snow,12,790
+445,No Holiday,275.49,0.0,0.0,90,Rain,light rain,3,3590
+446,No Holiday,285.81,0.0,0.0,90,Mist,mist,4,1381
+447,No Holiday,279.72,0.0,0.0,90,Rain,heavy intensity rain,3,5923
+448,No Holiday,291.53,0.0,0.0,1,Mist,mist,8,446
+449,No Holiday,294.38,0.25,0.0,90,Thunderstorm,proximity thunderstorm,9,5428
+450,No Holiday,287.93,0.0,0.0,90,Mist,mist,9,3364
+451,No Holiday,289.66,0.0,0.0,40,Clouds,scattered clouds,5,929
+452,No Holiday,262.75,0.0,0.0,64,Snow,light snow,12,462
+453,No Holiday,270.79,0.0,0.0,90,Snow,light snow,12,826
+454,No Holiday,277.22,0.0,0.0,90,Snow,light snow,3,5501
+455,No Holiday,282.87,0.0,0.0,0,Clear,Sky is Clear,9,810
+456,No Holiday,256.18,0.0,0.0,64,Snow,light snow,12,364
+457,No Holiday,281.3,0.0,0.0,1,Clear,sky is clear,4,353
+458,No Holiday,279.15,0.0,0.0,1,Clear,sky is clear,6,5953
+459,No Holiday,262.29,0.0,0.0,64,Clouds,broken clouds,1,4343
+460,No Holiday,263.47,0.0,0.0,0,Clear,sky is clear,2,264
+461,No Holiday,282.61,0.0,0.0,40,Mist,mist,9,583
+462,No Holiday,274.9,0.0,0.0,90,Mist,mist,11,2599
+463,No Holiday,282.55,0.0,0.0,0,Clear,Sky is Clear,10,852
+464,No Holiday,300.8,0.0,0.0,0,Clear,Sky is Clear,6,5862
+465,No Holiday,267.87,0.0,0.0,1,Clear,sky is clear,3,2785
+466,No Holiday,284.65,0.0,0.0,1,Clear,sky is clear,4,4541
+467,No Holiday,293.931,0.0,0.0,8,Clear,sky is clear,7,3471
+468,No Holiday,265.29,0.0,0.0,75,Haze,haze,1,4506
+469,No Holiday,279.08,0.0,0.0,40,Clouds,scattered clouds,5,6089
+470,No Holiday,286.88,0.0,0.0,40,Mist,mist,8,350
+471,No Holiday,285.39,0.56,0.0,90,Mist,mist,5,5899
+472,No Holiday,270.15,0.0,0.0,75,Clouds,broken clouds,2,266
+473,No Holiday,268.58,0.0,0.0,90,Mist,mist,1,753
+474,No Holiday,293.8,0.0,0.0,90,Mist,mist,8,2594
+475,No Holiday,290.79,0.0,0.0,90,Thunderstorm,proximity thunderstorm,8,3047
+476,No Holiday,297.55,0.0,0.0,90,Thunderstorm,proximity thunderstorm,5,4267
+477,No Holiday,296.09,0.0,0.0,75,Mist,mist,7,1722
+478,No Holiday,256.58,0.0,0.0,90,Clouds,overcast clouds,1,2368
+479,No Holiday,256.02,0.0,0.0,5,Clear,sky is clear,2,5886
+480,No Holiday,290.62,0.0,0.0,1,Fog,fog,6,1499
+481,No Holiday,287.12,0.0,0.0,90,Rain,light rain,5,6244
+482,No Holiday,276.22,0.0,0.0,90,Clouds,overcast clouds,1,4464
+483,Christmas Day,264.4,0.0,0.0,90,Clouds,overcast clouds,12,803
+484,No Holiday,290.51,0.0,0.0,40,Clouds,scattered clouds,5,3259
+485,No Holiday,295.25,0.0,0.0,1,Clear,sky is clear,7,714
+486,No Holiday,274.22,0.0,0.0,90,Drizzle,light intensity drizzle,3,2500
+487,No Holiday,279.31,0.0,0.0,20,Clouds,few clouds,4,5475
+488,No Holiday,293.92,0.0,0.0,1,Clear,sky is clear,8,3413
+489,No Holiday,276.8,0.0,0.0,1,Clear,sky is clear,4,1447
+490,No Holiday,265.71,0.0,0.0,64,Clouds,broken clouds,11,6273
+491,No Holiday,266.15,0.0,0.0,75,Clouds,broken clouds,12,4975
+492,No Holiday,283.29,0.0,0.0,90,Rain,moderate rain,11,4247
+493,No Holiday,275.15,0.0,0.0,90,Drizzle,drizzle,11,274
+494,No Holiday,289.23,0.0,0.0,75,Clouds,broken clouds,8,6017
+495,No Holiday,282.36,0.0,0.0,1,Clear,sky is clear,4,5803
+496,No Holiday,274.28,0.0,0.0,90,Rain,light rain,11,4686
+497,No Holiday,278.01,0.0,0.0,1,Clear,sky is clear,3,4766
+498,No Holiday,297.85,0.0,0.0,92,Clouds,overcast clouds,6,4450
+499,No Holiday,274.5,0.0,0.0,40,Clouds,scattered clouds,10,5532
+500,No Holiday,262.28,0.0,0.0,90,Mist,mist,12,1337
+501,No Holiday,250.08,0.0,0.0,1,Clear,sky is clear,1,388
+502,No Holiday,297.07,0.0,0.0,1,Clear,sky is clear,8,5348
+503,No Holiday,275.42,0.0,0.0,90,Mist,mist,12,4939
+504,No Holiday,295.92,0.0,0.0,40,Clouds,scattered clouds,5,4556
+505,No Holiday,258.85,0.0,0.0,40,Clouds,scattered clouds,2,1996
+506,No Holiday,292.58,0.0,0.0,90,Clouds,overcast clouds,6,4890
+507,No Holiday,294.95,0.0,0.0,1,Clear,sky is clear,7,1386
+508,No Holiday,269.29,0.0,0.0,1,Clear,sky is clear,3,690
+509,No Holiday,258.97,0.0,0.0,75,Clouds,broken clouds,2,689
+510,No Holiday,268.28,0.0,0.0,1,Clear,sky is clear,1,2952
+511,No Holiday,296.15,0.0,0.0,90,Clouds,overcast clouds,9,6807
+512,No Holiday,266.15,0.0,0.0,90,Clouds,overcast clouds,12,901
+513,No Holiday,250.16,0.0,0.0,1,Clear,sky is clear,2,5149
+514,No Holiday,295.52,0.0,0.0,1,Clear,sky is clear,9,1065
+515,No Holiday,271.29,0.0,0.0,75,Clouds,broken clouds,11,5563
+516,No Holiday,279.45,0.0,0.0,90,Clouds,overcast clouds,4,4907
+517,No Holiday,291.07,0.0,0.0,90,Mist,mist,10,2208
+518,No Holiday,275.11,0.0,0.0,90,Rain,light rain,5,3521
+519,No Holiday,261.19,0.0,0.0,64,Clouds,broken clouds,11,624
+520,No Holiday,271.51,0.0,0.0,90,Clouds,overcast clouds,1,870
+521,No Holiday,273.57,0.0,0.0,90,Rain,light rain,12,929
+522,No Holiday,286.75,0.0,0.0,1,Clear,sky is clear,10,4925
+523,No Holiday,293.2,0.0,0.0,1,Clear,sky is clear,8,3173
+524,No Holiday,292.63,2.41,0.0,90,Rain,moderate rain,5,6537
+525,No Holiday,278.26,0.0,0.0,1,Clear,sky is clear,5,360
+526,No Holiday,276.95,0.0,0.0,90,Drizzle,shower drizzle,4,6686
+527,No Holiday,271.15,0.0,0.0,40,Clouds,scattered clouds,3,3864
+528,No Holiday,269.78,0.0,0.0,90,Mist,mist,12,1983
+529,No Holiday,275.4,0.0,0.0,1,Clear,sky is clear,10,5859
+530,No Holiday,262.24,0.0,0.0,64,Clouds,broken clouds,12,259
+531,No Holiday,292.32,4.89,0.0,90,Drizzle,light intensity drizzle,6,843
+532,No Holiday,282.71,0.0,0.0,90,Clouds,overcast clouds,4,4958
+533,No Holiday,299.13,0.0,0.0,8,Clear,sky is clear,8,5982
+534,No Holiday,268.63,0.0,0.0,90,Haze,haze,2,1296
+535,No Holiday,282.37,0.0,0.0,1,Clear,sky is clear,5,814
+536,No Holiday,298.88,0.0,0.0,0,Clear,Sky is Clear,8,4175
+537,No Holiday,282.35,0.6,0.0,90,Mist,mist,4,2722
+538,No Holiday,291.07,0.0,0.0,20,Mist,mist,8,5243
+539,No Holiday,295.18,7.97,0.0,90,Thunderstorm,proximity thunderstorm,7,319
+540,No Holiday,284.15,0.0,0.0,40,Clouds,scattered clouds,5,345
+541,No Holiday,280.22,0.0,0.0,1,Clear,sky is clear,4,2076
+542,No Holiday,269.75,0.0,0.0,90,Snow,snow,1,2856
+543,No Holiday,274.21,0.0,0.0,90,Mist,mist,4,5446
+544,No Holiday,276.08,0.0,0.0,1,Mist,mist,11,5225
+545,No Holiday,259.3,0.0,0.0,64,Clouds,broken clouds,1,4243
+546,No Holiday,295.27,0.0,0.0,1,Clear,sky is clear,7,1
+547,No Holiday,296.47,0.0,0.0,1,Clear,sky is clear,9,5710
+548,No Holiday,271.21,0.0,0.0,90,Clouds,overcast clouds,12,3411
+549,No Holiday,283.14,0.0,0.0,40,Clouds,scattered clouds,9,1840
+550,No Holiday,287.28,0.0,0.0,75,Clouds,broken clouds,4,4136
+551,No Holiday,298.48,0.0,0.0,1,Clear,sky is clear,10,6160
+552,No Holiday,269.8,0.0,0.0,75,Clouds,broken clouds,1,314
+553,No Holiday,294.58,0.0,0.0,1,Mist,mist,8,2511
+554,No Holiday,276.37,0.0,0.0,1,Clear,sky is clear,3,2275
+555,No Holiday,292.61,0.0,0.0,90,Thunderstorm,proximity thunderstorm,6,4435
+556,No Holiday,272.81,0.0,0.0,90,Clouds,overcast clouds,10,1060
+557,No Holiday,288.53,0.0,0.0,1,Clear,sky is clear,5,752
+558,No Holiday,280.58,0.0,0.0,1,Mist,mist,2,4938
+559,No Holiday,284.01,0.0,0.0,40,Clouds,scattered clouds,10,4872
+560,No Holiday,287.64,0.0,0.0,0,Clear,Sky is Clear,6,6651
+561,No Holiday,295.38,0.0,0.0,12,Clouds,few clouds,7,3097
+562,No Holiday,289.14,0.0,0.0,1,Clear,sky is clear,7,436
+563,No Holiday,256.29,0.0,0.0,1,Clear,sky is clear,2,6630
+564,No Holiday,268.64,0.0,0.0,1,Clear,sky is clear,3,4869
+565,No Holiday,262.15,0.0,0.0,1,Clear,sky is clear,1,3996
+566,No Holiday,278.58,0.0,0.0,75,Clouds,broken clouds,2,4670
+567,No Holiday,264.79,0.0,0.0,1,Clear,sky is clear,11,2214
+568,No Holiday,274.16,0.0,0.0,90,Mist,mist,3,4750
+569,No Holiday,276.29,0.0,0.0,75,Clouds,broken clouds,2,5308
+570,No Holiday,292.43,5.36,0.0,90,Rain,heavy intensity rain,8,2234
+571,No Holiday,297.3,0.0,0.0,1,Clear,sky is clear,5,3223
+572,No Holiday,292.02,0.0,0.0,75,Clouds,broken clouds,7,5332
+573,No Holiday,291.55,0.0,0.0,90,Drizzle,light intensity drizzle,7,5821
+574,No Holiday,285.71,0.0,0.0,1,Clear,sky is clear,5,5175
+575,No Holiday,269.65,0.0,0.0,75,Snow,light snow,3,3107
+576,No Holiday,254.09,0.0,0.0,1,Clear,sky is clear,1,565
+577,No Holiday,275.35,0.0,0.0,90,Clouds,overcast clouds,12,652
+578,No Holiday,298.1,0.0,0.0,1,Clear,sky is clear,6,2621
+579,No Holiday,270.94,0.0,0.0,1,Clear,sky is clear,1,4535
+580,No Holiday,292.11,0.25,0.0,75,Rain,light rain,8,5349
+581,No Holiday,257.44,0.0,0.0,1,Haze,haze,2,3018
+582,No Holiday,265.9,0.0,0.0,1,Clear,sky is clear,3,1059
+583,No Holiday,291.42,0.0,0.0,90,Rain,light rain,7,2282
+584,No Holiday,286.46,0.0,0.0,40,Rain,light rain,5,2718
+585,No Holiday,278.35,0.25,0.0,0,Rain,light rain,10,1312
+586,No Holiday,289.26,3.18,0.0,80,Rain,moderate rain,6,2966
+587,No Holiday,273.23,0.0,0.0,90,Mist,mist,4,3240
+588,No Holiday,266.73,0.0,0.05,90,Snow,light snow,12,363
+589,No Holiday,256.38,0.0,0.0,75,Clouds,broken clouds,2,234
+590,No Holiday,288.82,0.0,0.0,1,Clear,sky is clear,9,1923
+591,No Holiday,291.16,1.41,0.0,90,Mist,mist,6,5933
+592,No Holiday,259.15,0.0,0.0,75,Clouds,broken clouds,2,4612
+593,No Holiday,272.34,0.0,0.0,1,Clear,sky is clear,3,3261
+594,No Holiday,274.94,0.0,0.0,90,Rain,moderate rain,12,1616
+595,No Holiday,281.4,0.0,0.0,90,Mist,mist,4,3075
+596,No Holiday,285.47,0.0,0.0,0,Clear,Sky is Clear,6,5597
+597,No Holiday,291.95,0.0,0.0,90,Drizzle,drizzle,9,2597
+598,No Holiday,283.89,0.0,0.0,1,Clear,sky is clear,9,5573
+599,No Holiday,292.51,0.0,0.0,1,Clear,sky is clear,8,5347
+600,No Holiday,280.65,0.0,0.0,1,Clear,sky is clear,2,5568
+601,No Holiday,297.99,0.0,0.0,40,Clouds,scattered clouds,8,5864
+602,No Holiday,268.71,0.0,0.0,90,Fog,fog,3,2542
+603,No Holiday,269.29,0.0,0.0,90,Clouds,overcast clouds,1,3539
+604,No Holiday,300.11,0.0,0.0,1,Clear,sky is clear,7,5000
+605,No Holiday,281.3,0.0,0.0,1,Clear,sky is clear,5,482
+606,No Holiday,298.59,0.0,0.0,92,Rain,moderate rain,7,5471
+607,No Holiday,262.78,0.0,0.0,1,Clear,sky is clear,3,2693
+608,No Holiday,264.93,0.0,0.0,1,Mist,mist,2,6318
+609,No Holiday,292.85,0.0,0.0,75,Clouds,broken clouds,9,576
+610,No Holiday,290.14,0.0,0.0,75,Rain,light rain,6,4383
+611,No Holiday,298.5,0.0,0.0,40,Clouds,scattered clouds,5,4394
+612,No Holiday,296.85,0.0,0.0,75,Clouds,broken clouds,9,3861
+613,No Holiday,299.85,0.0,0.0,40,Clouds,scattered clouds,6,2776
+614,No Holiday,256.02,0.0,0.0,1,Clear,sky is clear,1,4980
+615,No Holiday,271.48,0.0,0.0,90,Clouds,overcast clouds,3,5619
+616,No Holiday,257.04,0.0,0.0,0,Clear,sky is clear,2,495
+617,No Holiday,270.71,0.0,0.0,90,Mist,mist,1,3983
+618,No Holiday,286.72,0.0,0.0,1,Clear,sky is clear,5,652
+619,No Holiday,266.01,0.0,0.0,40,Snow,light snow,2,5888
+620,No Holiday,293.39,0.0,0.0,40,Mist,mist,9,6477
+621,No Holiday,291.11,0.0,0.0,36,Clouds,scattered clouds,6,1921
+622,No Holiday,280.5,0.0,0.0,1,Clear,sky is clear,5,5568
+623,No Holiday,260.09,0.0,0.0,1,Clear,sky is clear,2,1445
+624,No Holiday,290.86,1.33,0.0,90,Rain,moderate rain,8,5468
+625,No Holiday,270.22,0.0,0.0,1,Clear,sky is clear,3,4173
+626,No Holiday,285.91,0.7,0.0,90,Mist,mist,5,3243
+627,No Holiday,297.0,0.0,0.0,1,Clear,sky is clear,8,2938
+628,No Holiday,272.68,0.0,0.0,90,Clouds,overcast clouds,3,432
+629,No Holiday,292.46,0.0,0.0,24,Clouds,few clouds,6,3565
+630,No Holiday,285.65,0.0,0.0,1,Clear,sky is clear,9,558
+631,No Holiday,285.86,0.0,0.0,90,Drizzle,drizzle,11,292
+632,No Holiday,301.67,0.0,0.0,0,Clear,Sky is Clear,7,6223
+633,No Holiday,293.56,0.0,0.0,75,Clouds,broken clouds,4,4497
+634,No Holiday,278.57,0.0,0.0,90,Drizzle,light intensity drizzle,11,5678
+635,No Holiday,282.29,0.0,0.0,75,Rain,light rain,2,4779
+636,No Holiday,275.31,0.0,0.0,90,Snow,heavy snow,4,1306
+637,No Holiday,293.48,0.0,0.0,90,Clouds,overcast clouds,6,4346
+638,No Holiday,290.95,0.0,0.0,75,Clouds,broken clouds,8,3096
+639,No Holiday,291.88,0.0,0.0,90,Clouds,overcast clouds,8,4970
+640,No Holiday,279.29,0.0,0.0,1,Clear,sky is clear,11,2802
+641,No Holiday,273.28,0.0,0.17,90,Rain,light rain,1,359
+642,No Holiday,294.42,0.0,0.0,1,Clear,sky is clear,7,744
+643,No Holiday,275.17,0.0,0.0,90,Mist,mist,12,3884
+644,No Holiday,282.36,0.0,0.0,20,Clouds,few clouds,10,4651
+645,No Holiday,291.097,0.0,0.0,92,Rain,light rain,10,2665
+646,No Holiday,290.36,0.0,0.0,0,Clear,Sky is Clear,8,1591
+647,No Holiday,298.62,0.0,0.0,56,Rain,light rain,8,4835
+648,No Holiday,300.55,0.0,0.0,75,Clouds,broken clouds,9,4830
+649,No Holiday,290.225,0.0,0.0,0,Clear,Sky is Clear,6,5097
+650,No Holiday,292.53,0.0,0.0,1,Clear,sky is clear,8,6052
+651,No Holiday,283.808,0.0,0.0,0,Clear,Sky is Clear,2,5000
+652,No Holiday,276.8,0.0,0.0,0,Clear,sky is clear,11,5326
+653,No Holiday,278.84,0.0,0.0,90,Mist,mist,11,2078
+654,No Holiday,270.92,0.0,0.0,58,Clouds,broken clouds,1,3795
+655,No Holiday,296.37,0.0,0.0,40,Clouds,scattered clouds,5,3541
+656,No Holiday,290.22,0.0,0.0,1,Fog,fog,7,355
+657,No Holiday,270.22,0.0,0.0,40,Snow,light snow,3,2692
+658,No Holiday,267.63,0.0,0.0,1,Haze,haze,2,5814
+659,No Holiday,260.75,0.0,0.0,20,Clouds,few clouds,2,5833
+660,No Holiday,268.22,0.0,0.0,1,Clear,sky is clear,3,761
+661,No Holiday,279.66,0.0,0.0,1,Mist,mist,2,1169
+662,No Holiday,274.78,0.0,0.0,90,Clouds,overcast clouds,1,4662
+663,No Holiday,259.21,0.0,0.0,90,Snow,snow,2,337
+664,No Holiday,264.01,0.0,0.0,1,Clear,sky is clear,2,1908
+665,No Holiday,284.22,0.0,0.0,75,Clouds,broken clouds,9,885
+666,No Holiday,263.52,0.0,0.0,90,Clouds,overcast clouds,2,3892
+667,No Holiday,267.68,0.0,0.0,90,Mist,mist,12,4814
+668,No Holiday,285.86,0.0,0.0,90,Rain,moderate rain,4,5971
+669,No Holiday,288.8,0.0,0.0,90,Rain,heavy intensity rain,9,4490
+670,No Holiday,295.58,0.0,0.0,1,Rain,moderate rain,7,373
+671,No Holiday,289.71,0.0,0.0,20,Mist,mist,11,4012
+672,No Holiday,282.73,0.0,0.0,0,Clear,Sky is Clear,9,359
+673,No Holiday,296.29,0.0,0.0,1,Clear,sky is clear,9,4432
+674,No Holiday,295.8,0.0,0.0,0,Clear,Sky is Clear,6,1164
+675,No Holiday,281.54,0.0,0.0,0,Clear,Sky is Clear,10,4187
+676,No Holiday,273.22,0.0,0.0,40,Mist,mist,4,6970
+677,No Holiday,273.21,0.0,0.0,1,Clear,sky is clear,3,4354
+678,No Holiday,273.21,0.0,0.0,90,Snow,light rain and snow,1,927
+679,No Holiday,284.23,0.0,0.0,40,Clouds,scattered clouds,10,4259
+680,No Holiday,273.69,0.0,0.0,90,Snow,light snow,3,388
+681,No Holiday,287.29,0.0,0.0,90,Mist,mist,4,1908
+682,No Holiday,289.15,0.0,0.0,1,Mist,mist,8,2229
+683,No Holiday,292.06,0.0,0.0,40,Clouds,scattered clouds,9,4408
+684,No Holiday,271.58,0.0,0.0,40,Mist,mist,1,4033
+685,No Holiday,297.22,0.0,0.0,40,Clouds,scattered clouds,5,5657
+686,No Holiday,261.39,0.0,0.0,1,Clear,sky is clear,1,6493
+687,No Holiday,260.0,0.0,0.0,5,Clear,sky is clear,4,4778
+688,No Holiday,293.675,0.0,0.0,92,Clouds,overcast clouds,7,4200
+689,No Holiday,292.86,0.0,0.0,90,Drizzle,drizzle,7,2903
+690,No Holiday,288.55,0.0,0.0,1,Clear,sky is clear,11,4549
+691,No Holiday,269.89,0.0,0.0,92,Fog,fog,4,1822
+692,No Holiday,295.95,0.0,0.0,75,Clouds,broken clouds,9,2902
+693,No Holiday,280.29,0.0,0.0,90,Clouds,overcast clouds,4,3308
+694,No Holiday,253.51,0.0,0.0,1,Clear,sky is clear,1,991
+695,No Holiday,274.08,0.0,0.0,90,Mist,mist,1,5619
+696,No Holiday,271.0,0.0,0.0,1,Clear,sky is clear,12,4687
+697,No Holiday,294.39,0.0,0.0,75,Rain,light rain,7,508
+698,No Holiday,285.84,3.13,0.0,90,Thunderstorm,proximity thunderstorm with rain,10,892
+699,No Holiday,285.29,0.0,0.0,90,Mist,mist,4,6303
+700,No Holiday,288.36,0.0,0.0,90,Mist,mist,10,4982
+701,No Holiday,296.05,0.0,0.0,1,Clear,sky is clear,7,2269
+702,No Holiday,272.65,0.0,0.0,90,Mist,mist,11,3930
+703,No Holiday,293.66,0.0,0.0,40,Mist,mist,9,602
+704,No Holiday,288.61,0.0,0.0,75,Clouds,broken clouds,10,4639
+705,No Holiday,273.77,0.0,0.0,90,Mist,mist,12,2334
+706,No Holiday,266.02,2.03,0.0,90,Rain,moderate rain,1,2868
+707,No Holiday,271.15,0.0,0.0,90,Snow,light snow,12,5526
+708,No Holiday,276.15,0.0,0.0,90,Clouds,overcast clouds,3,5385
+709,No Holiday,288.33,0.0,0.0,1,Clear,sky is clear,5,3349
+710,No Holiday,291.0,0.0,0.0,20,Haze,haze,11,6198
+711,No Holiday,278.72,0.0,0.0,90,Clouds,overcast clouds,4,278
+712,No Holiday,269.29,0.0,0.0,90,Mist,mist,2,356
+713,No Holiday,273.45,0.0,0.0,90,Clouds,overcast clouds,3,2859
+714,No Holiday,272.08,0.0,0.0,1,Clear,sky is clear,11,5208
+715,No Holiday,274.65,0.0,0.0,90,Mist,mist,1,1488
+716,No Holiday,291.15,0.0,0.0,90,Rain,light rain,6,4872
+717,No Holiday,263.15,0.0,0.0,40,Clouds,scattered clouds,2,3429
+718,No Holiday,276.37,0.0,0.0,90,Mist,mist,2,6094
+719,No Holiday,292.15,0.0,0.0,1,Clear,sky is clear,6,469
+720,No Holiday,292.82,0.0,0.0,40,Rain,light rain,6,369
+721,No Holiday,263.7,0.0,0.0,20,Clouds,few clouds,3,346
+722,No Holiday,305.26,0.0,0.0,12,Clouds,few clouds,7,6659
+723,No Holiday,296.83,1.27,0.0,75,Mist,mist,9,325
+724,No Holiday,295.14,0.0,0.0,24,Clouds,few clouds,7,670
+725,No Holiday,291.72,0.0,0.0,1,Clear,sky is clear,5,4932
+726,No Holiday,281.95,0.0,0.0,90,Clouds,overcast clouds,5,5159
+727,No Holiday,270.45,0.0,0.0,90,Snow,heavy snow,3,6574
+728,No Holiday,290.98,0.0,0.0,1,Clear,sky is clear,9,2264
+729,No Holiday,275.02,0.0,0.0,90,Mist,mist,10,4695
+730,No Holiday,278.29,0.0,0.0,1,Clear,sky is clear,3,288
+731,No Holiday,295.07,0.0,0.0,80,Clouds,broken clouds,8,5330
+732,No Holiday,290.22,0.0,0.0,90,Rain,light rain,7,6763
+733,No Holiday,256.89,0.0,0.0,1,Clear,sky is clear,1,949
+734,No Holiday,274.28,0.0,0.0,90,Snow,light snow,1,5608
+735,No Holiday,293.52,0.0,0.0,75,Clouds,broken clouds,6,4185
+736,No Holiday,294.68,0.0,0.0,1,Clear,sky is clear,8,4734
+737,No Holiday,288.35,0.0,0.0,1,Clear,sky is clear,8,2925
+738,No Holiday,292.64,0.0,0.0,90,Rain,light intensity shower rain,6,4695
+739,No Holiday,299.59,0.25,0.0,75,Rain,light rain,9,3601
+740,No Holiday,269.42,0.0,0.0,90,Mist,mist,3,4631
+741,No Holiday,287.45,0.0,0.0,88,Clouds,overcast clouds,7,1194
+742,No Holiday,276.894,0.0,0.0,0,Clear,Sky is Clear,10,2276
+743,No Holiday,286.66,0.76,0.0,92,Mist,mist,6,4769
+744,No Holiday,248.15,0.0,0.0,1,Clear,sky is clear,1,959
+745,No Holiday,281.79,0.0,0.0,90,Drizzle,drizzle,3,1776
+746,No Holiday,295.52,7.54,0.0,76,Mist,mist,6,380
+747,No Holiday,295.89,0.0,0.0,0,Clear,Sky is Clear,8,4721
+748,No Holiday,267.72,0.25,0.0,90,Rain,light rain,3,3901
+749,No Holiday,262.61,0.0,0.0,1,Clear,sky is clear,2,267
+750,No Holiday,272.58,0.0,0.0,1,Mist,mist,1,664
+751,No Holiday,274.49,0.0,0.0,1,Fog,fog,4,808
+752,No Holiday,271.02,0.0,0.0,1,Clear,sky is clear,2,6255
+753,No Holiday,274.67,0.0,0.0,75,Clouds,broken clouds,11,4490
+754,No Holiday,302.99,0.0,0.0,75,Rain,moderate rain,7,5494
+755,No Holiday,288.47,0.0,0.0,1,Clear,sky is clear,6,917
+756,No Holiday,271.65,0.0,0.0,90,Mist,mist,2,2174
+757,No Holiday,277.66,0.0,0.0,90,Clouds,overcast clouds,3,389
+758,No Holiday,285.08,0.0,0.0,1,Clear,sky is clear,5,561
+759,No Holiday,291.91,0.0,0.0,0,Clear,Sky is Clear,7,387
+760,No Holiday,268.69,0.0,0.0,40,Clouds,scattered clouds,3,1753
+761,No Holiday,270.9,0.0,0.0,90,Haze,haze,2,2834
+762,No Holiday,275.27,0.0,0.0,90,Drizzle,drizzle,1,640
+763,No Holiday,271.86,0.0,0.0,1,Clear,sky is clear,4,4483
+764,No Holiday,289.23,0.0,0.0,75,Mist,mist,7,1350
+765,No Holiday,275.81,0.0,0.0,90,Rain,light rain,5,4818
+766,No Holiday,262.17,0.0,0.0,40,Haze,haze,12,4150
+767,No Holiday,288.13,0.0,0.0,1,Clear,sky is clear,10,1146
+768,No Holiday,257.64,0.0,0.0,64,Clouds,broken clouds,12,350
+769,No Holiday,276.793,0.0,0.0,64,Clouds,broken clouds,1,3281
+770,No Holiday,267.37,0.0,0.0,64,Snow,light snow,12,4535
+771,No Holiday,273.42,0.0,0.0,90,Clouds,overcast clouds,2,7154
+772,No Holiday,290.97,1.52,0.0,90,Mist,mist,5,301
+773,No Holiday,288.69,0.0,0.0,90,Mist,mist,5,692
+774,No Holiday,251.0,0.0,0.0,1,Clear,sky is clear,2,3036
+775,No Holiday,278.4,0.0,0.0,1,Clear,sky is clear,2,2242
+776,No Holiday,289.54,2.03,0.0,92,Mist,mist,8,2996
+777,No Holiday,270.64,0.0,0.0,90,Clouds,overcast clouds,3,772
+778,No Holiday,263.65,0.0,0.0,90,Haze,haze,2,4462
+779,No Holiday,288.69,0.0,0.0,40,Drizzle,light intensity drizzle,5,4933
+780,No Holiday,280.52,0.0,0.0,1,Clear,sky is clear,10,2963
+781,No Holiday,290.71,0.25,0.0,90,Rain,light rain,8,5865
+782,No Holiday,301.27,0.0,0.0,1,Clear,sky is clear,7,6256
+783,No Holiday,284.88,0.0,0.0,75,Clouds,broken clouds,5,4830
+784,No Holiday,290.95,0.0,0.0,1,Clear,sky is clear,10,4508
+785,No Holiday,294.97,0.0,0.0,1,Clear,sky is clear,8,942
+786,No Holiday,262.01,0.0,0.0,75,Clouds,broken clouds,3,4763
+787,No Holiday,259.68,0.0,0.0,75,Fog,fog,3,722
+788,No Holiday,288.72,0.0,0.0,90,Clouds,overcast clouds,8,1605
+789,No Holiday,259.37,0.0,0.0,1,Clear,sky is clear,11,2549
+790,No Holiday,286.08,0.0,0.0,40,Rain,proximity shower rain,4,2704
+791,No Holiday,294.41,0.25,0.0,90,Rain,light rain,9,2334
+792,No Holiday,284.92,0.0,0.0,1,Clear,sky is clear,5,1042
+793,No Holiday,295.89,0.0,0.0,75,Thunderstorm,thunderstorm,7,358
+794,No Holiday,291.4,0.0,0.0,1,Clear,sky is clear,10,561
+795,No Holiday,273.46,0.0,0.0,90,Snow,light snow,4,331
+796,No Holiday,282.69,0.0,0.0,40,Clouds,scattered clouds,4,5738
+797,No Holiday,268.87,0.0,0.0,90,Snow,light snow,4,1450
+798,No Holiday,291.15,0.0,0.0,1,Haze,haze,7,5450
+799,No Holiday,266.69,0.0,0.0,90,Clouds,overcast clouds,2,4913
+800,No Holiday,290.13,0.0,0.0,90,Clouds,overcast clouds,10,4460
+801,No Holiday,282.2,0.0,0.0,1,Clear,sky is clear,9,699
+802,No Holiday,259.1,0.0,0.0,40,Clouds,scattered clouds,2,384
+803,No Holiday,256.36,0.0,0.0,20,Snow,light snow,1,484
+804,No Holiday,301.08,0.0,0.0,20,Clouds,few clouds,7,6597
+805,No Holiday,294.43,0.0,0.0,8,Clear,sky is clear,9,5183
+806,No Holiday,296.24,0.0,0.0,75,Mist,mist,7,457
+807,No Holiday,284.02,0.0,0.0,90,Rain,moderate rain,10,4564
+808,No Holiday,297.35,0.0,0.0,40,Clouds,scattered clouds,6,2581
+809,No Holiday,288.76,0.0,0.0,1,Clear,sky is clear,10,2772
+810,No Holiday,297.28,0.0,0.0,90,Clouds,overcast clouds,7,3331
+811,No Holiday,299.06,0.0,0.0,75,Clouds,broken clouds,7,4669
+812,No Holiday,287.28,0.0,0.0,40,Clouds,scattered clouds,6,419
+813,No Holiday,289.15,0.0,0.0,1,Clear,sky is clear,9,3361
+814,No Holiday,282.3,0.0,0.0,90,Clouds,overcast clouds,10,4648
+815,No Holiday,295.66,0.0,0.0,1,Clear,sky is clear,7,1485
+816,No Holiday,283.14,0.0,0.0,40,Clouds,scattered clouds,4,4184
+817,No Holiday,298.64,0.0,0.0,1,Haze,haze,7,2598
+818,No Holiday,291.35,0.0,0.0,40,Clouds,scattered clouds,7,379
+819,No Holiday,292.93,0.0,0.0,90,Drizzle,light intensity drizzle,8,5407
+820,No Holiday,294.21,0.0,0.0,75,Clouds,broken clouds,6,3544
+821,No Holiday,251.15,0.0,0.0,1,Clear,sky is clear,12,507
+822,No Holiday,291.05,0.0,0.0,1,Clear,sky is clear,9,3154
+823,No Holiday,271.72,0.0,0.0,90,Snow,snow,12,1763
+824,No Holiday,272.49,0.0,0.0,75,Snow,light snow,1,323
+825,No Holiday,256.67,0.0,0.0,85,Clouds,overcast clouds,2,3440
+826,No Holiday,273.4,0.0,0.0,40,Clouds,scattered clouds,2,4832
+827,No Holiday,299.15,0.0,0.0,20,Clouds,few clouds,7,5698
+828,No Holiday,288.15,0.0,0.0,20,Clouds,few clouds,11,5368
+829,No Holiday,258.29,0.0,0.0,1,Clear,sky is clear,2,360
+830,No Holiday,290.26,0.0,0.0,32,Clouds,scattered clouds,6,382
+831,No Holiday,256.59,0.0,0.0,5,Clear,sky is clear,1,3185
+832,No Holiday,251.13,0.0,0.0,1,Clear,sky is clear,12,5133
+833,No Holiday,290.58,0.0,0.0,0,Clear,Sky is Clear,7,1498
+834,No Holiday,272.68,0.0,0.0,90,Clouds,overcast clouds,11,4305
+835,No Holiday,288.71,0.86,0.0,90,Mist,mist,9,4326
+836,No Holiday,293.25,0.25,0.0,75,Drizzle,light intensity drizzle,7,5063
+837,No Holiday,277.58,0.0,0.0,1,Clear,sky is clear,11,3716
+838,No Holiday,290.59,0.51,0.0,90,Rain,moderate rain,5,657
+839,No Holiday,288.22,0.0,0.0,1,Clear,sky is clear,8,428
+840,No Holiday,276.28,0.0,0.0,90,Mist,mist,1,4510
+841,No Holiday,296.15,0.0,0.0,90,Thunderstorm,proximity thunderstorm,7,4941
+842,No Holiday,292.49,0.0,0.0,40,Haze,haze,4,5246
+843,No Holiday,276.51,0.0,0.0,90,Mist,mist,11,5906
+844,No Holiday,283.51,0.0,0.0,90,Mist,mist,3,4460
+845,No Holiday,272.95,0.0,0.0,1,Mist,mist,3,2825
+846,No Holiday,276.66,1.61,0.0,90,Rain,moderate rain,4,1485
+847,No Holiday,278.58,0.0,0.0,1,Clear,sky is clear,4,3298
+848,No Holiday,283.68,0.0,0.0,90,Rain,light rain,3,2744
+849,No Holiday,286.85,0.0,0.0,90,Rain,light rain,5,340
+850,No Holiday,289.36,0.0,0.0,90,Thunderstorm,proximity thunderstorm with rain,5,516
+851,No Holiday,286.59,0.0,0.0,40,Rain,light rain,4,5598
+852,No Holiday,295.16,0.0,0.0,40,Clouds,scattered clouds,5,4772
+853,No Holiday,273.27,0.0,0.0,40,Clouds,scattered clouds,4,5332
+854,No Holiday,275.09,0.0,0.0,90,Mist,mist,11,4694
+855,No Holiday,287.18,0.0,0.0,0,Mist,mist,7,5960
+856,No Holiday,295.12,0.0,0.0,1,Drizzle,light intensity drizzle,9,2004
+857,No Holiday,282.76,0.0,0.0,90,Clouds,overcast clouds,4,6527
+858,No Holiday,284.65,0.0,0.0,90,Rain,light rain,4,337
+859,No Holiday,271.28,0.0,0.0,1,Clear,sky is clear,1,4671
+860,No Holiday,275.36,0.0,0.0,40,Clouds,scattered clouds,11,4121
+861,No Holiday,264.0,0.0,0.0,75,Clouds,broken clouds,3,5821
+862,No Holiday,298.02,0.0,0.0,90,Clouds,overcast clouds,6,3187
+863,No Holiday,277.0,0.0,0.0,90,Clouds,overcast clouds,1,6649
+864,No Holiday,275.25,0.0,0.0,20,Clouds,few clouds,5,1071
+865,No Holiday,258.38,0.0,0.0,1,Clear,sky is clear,2,6347
+866,No Holiday,261.01,0.0,0.0,90,Snow,light snow,2,1305
+867,No Holiday,290.08,0.0,0.0,75,Clouds,broken clouds,10,4958
+868,No Holiday,276.15,0.0,0.0,1,Clear,sky is clear,3,3596
+869,No Holiday,276.56,0.0,0.0,1,Clear,sky is clear,11,5269
+870,No Holiday,271.23,0.0,0.0,90,Clouds,overcast clouds,11,339
+871,No Holiday,271.37,0.0,0.0,90,Snow,light snow,4,2145
+872,No Holiday,297.79,0.0,0.0,0,Clear,Sky is Clear,6,3210
+873,No Holiday,299.98,0.0,0.0,40,Thunderstorm,proximity thunderstorm,9,4871
+874,No Holiday,289.69,0.0,0.0,1,Rain,light rain,9,413
+875,No Holiday,286.74,0.0,0.0,75,Rain,light rain,4,5009
+876,No Holiday,272.5,0.0,0.0,90,Clouds,overcast clouds,10,349
+877,No Holiday,293.26,0.0,0.0,48,Clouds,scattered clouds,6,785
+878,No Holiday,286.98,0.0,0.0,90,Clouds,overcast clouds,5,3696
+879,No Holiday,294.24,0.0,0.0,0,Clear,Sky is Clear,8,1689
+880,No Holiday,270.79,0.0,0.0,5,Clear,sky is clear,4,4102
+881,No Holiday,297.36,0.0,0.0,75,Clouds,broken clouds,8,5656
+882,No Holiday,273.61,0.0,0.0,90,Mist,mist,1,5109
+883,No Holiday,292.96,0.0,0.0,90,Rain,moderate rain,6,6196
+884,No Holiday,288.14,0.0,0.0,1,Clear,sky is clear,9,5021
+885,No Holiday,291.31,0.0,0.0,90,Mist,mist,8,4975
+886,No Holiday,300.28,0.0,0.0,1,Clear,sky is clear,7,3385
+887,No Holiday,286.81,0.47,0.0,92,Mist,mist,6,4245
+888,No Holiday,275.35,0.0,0.0,1,Clear,sky is clear,2,3711
+889,No Holiday,285.65,4.09,0.0,90,Drizzle,light intensity drizzle,6,3925
+890,No Holiday,289.65,0.0,0.0,1,Clear,sky is clear,7,5782
+891,No Holiday,284.82,0.0,0.0,75,Clouds,broken clouds,11,3083
+892,No Holiday,298.31,0.0,0.0,90,Clouds,overcast clouds,9,3196
+893,No Holiday,293.22,7.25,0.0,90,Rain,heavy intensity rain,7,626
+894,No Holiday,294.76,0.0,0.0,1,Clear,sky is clear,7,1469
+895,No Holiday,277.28,0.0,0.0,1,Clear,sky is clear,4,4490
+896,No Holiday,255.18,0.0,0.0,64,Snow,light snow,12,271
+897,No Holiday,290.08,0.0,0.0,90,Mist,mist,5,341
+898,No Holiday,275.64,0.25,0.0,90,Rain,light rain,3,6421
+899,No Holiday,295.65,0.0,0.0,0,Clear,Sky is Clear,7,2781
+900,No Holiday,280.81,0.0,0.0,90,Clouds,overcast clouds,11,5870
+901,No Holiday,270.22,0.0,0.0,90,Clouds,overcast clouds,11,449
+902,No Holiday,293.79,0.0,0.0,8,Clear,sky is clear,7,847
+903,No Holiday,292.22,7.29,0.0,75,Rain,heavy intensity rain,7,374
+904,No Holiday,263.79,0.0,0.0,90,Clouds,overcast clouds,1,385
+905,No Holiday,301.83,0.0,0.0,1,Clear,sky is clear,8,4053
+906,No Holiday,280.97,0.0,0.0,87,Mist,mist,10,436
+907,No Holiday,273.81,0.0,0.0,90,Rain,light rain,11,4607
+908,No Holiday,286.87,0.0,0.0,1,Clear,sky is clear,9,2859
+909,No Holiday,263.24,0.0,0.0,1,Mist,mist,1,4057
+910,No Holiday,291.4,0.0,0.0,1,Clear,sky is clear,8,604
+911,No Holiday,270.94,0.0,0.0,90,Snow,light snow,12,4255
+912,No Holiday,276.64,0.0,0.0,90,Rain,light rain,4,2812
+913,No Holiday,283.84,0.0,0.0,75,Clouds,broken clouds,9,2147
+914,No Holiday,280.02,0.0,0.0,75,Clouds,broken clouds,5,5731
+915,No Holiday,275.08,0.0,0.0,90,Drizzle,light intensity drizzle,1,4779
+916,No Holiday,268.87,0.0,0.0,90,Mist,mist,2,735
+917,No Holiday,297.22,0.0,0.0,1,Clear,sky is clear,7,1128
+918,No Holiday,287.73,0.0,0.0,92,Rain,light rain,9,262
+919,No Holiday,282.68,0.0,0.0,1,Clear,sky is clear,12,6284
+920,No Holiday,262.34,0.0,0.0,1,Clear,sky is clear,3,1825
+921,No Holiday,270.41,0.0,0.0,90,Clouds,overcast clouds,3,749
+922,No Holiday,291.6,0.0,0.0,40,Clouds,scattered clouds,8,4540
+923,No Holiday,280.68,0.0,0.0,1,Clear,sky is clear,3,6139
+924,No Holiday,274.58,0.0,0.0,1,Clear,sky is clear,3,3608
+925,No Holiday,289.66,0.0,0.0,90,Clouds,overcast clouds,9,4523
+926,No Holiday,292.09,0.25,0.0,12,Rain,light rain,6,4226
+927,No Holiday,270.47,0.0,0.0,6,Clear,sky is clear,11,381
+928,No Holiday,281.46,0.0,0.0,1,Clear,sky is clear,4,1360
+929,No Holiday,296.37,0.0,0.0,40,Clouds,scattered clouds,8,3167
+930,No Holiday,295.64,0.0,0.0,1,Clear,sky is clear,5,2784
+931,No Holiday,303.68,0.0,0.0,12,Clouds,few clouds,7,3238
+932,No Holiday,296.01,0.0,0.0,1,Clear,sky is clear,6,4357
+933,No Holiday,283.98,0.0,0.0,1,Clear,sky is clear,9,5031
+934,No Holiday,264.02,0.0,0.0,1,Clear,sky is clear,4,649
+935,No Holiday,284.79,0.0,0.0,90,Rain,heavy intensity rain,5,353
+936,No Holiday,285.08,0.0,0.0,90,Clouds,overcast clouds,4,6258
+937,No Holiday,284.2,0.0,0.0,75,Clouds,broken clouds,10,4636
+938,No Holiday,287.22,0.0,0.0,1,Clear,sky is clear,5,5552
+939,No Holiday,295.66,0.0,0.0,12,Clouds,few clouds,8,3093
+940,No Holiday,268.58,0.0,0.0,90,Clouds,overcast clouds,3,1242
+941,No Holiday,291.73,0.0,0.0,1,Clear,sky is clear,6,362
+942,No Holiday,294.14,0.0,0.0,20,Clouds,few clouds,6,2796
+943,No Holiday,263.14,0.0,0.0,1,Clear,sky is clear,2,907
+944,No Holiday,273.22,0.0,0.0,1,Clear,sky is clear,12,866
+945,No Holiday,302.1,0.0,0.0,48,Clouds,scattered clouds,8,5307
+946,No Holiday,300.78,0.0,0.0,40,Clouds,scattered clouds,8,4452
+947,No Holiday,288.81,0.0,0.0,90,Rain,light rain,6,2944
+948,No Holiday,279.568,0.0,0.0,0,Clear,Sky is Clear,10,4594
+949,No Holiday,294.82,0.6,0.0,90,Mist,mist,7,790
+950,No Holiday,290.35,0.0,0.0,90,Mist,mist,8,1665
+951,No Holiday,281.22,0.0,0.0,90,Drizzle,heavy intensity drizzle,11,6341
+952,No Holiday,259.59,0.0,0.0,90,Snow,light snow,12,5169
+953,No Holiday,286.88,0.0,0.0,90,Rain,moderate rain,4,2049
+954,No Holiday,271.36,0.0,0.0,90,Mist,mist,4,3893
+955,No Holiday,292.54,0.0,0.0,1,Clear,sky is clear,9,4825
+956,No Holiday,296.77,0.0,0.0,40,Clouds,scattered clouds,6,4515
+957,No Holiday,269.55,0.0,0.0,90,Mist,mist,2,1606
+958,No Holiday,275.22,0.0,0.0,90,Rain,light rain,3,887
+959,No Holiday,295.18,0.0,0.0,0,Clear,Sky is Clear,7,3055
+960,No Holiday,284.27,0.25,0.0,68,Rain,light rain,6,372
+961,No Holiday,296.09,0.0,0.0,1,Clear,sky is clear,6,5225
+962,No Holiday,273.92,0.0,0.0,16,Clouds,few clouds,11,1070
+963,No Holiday,289.95,0.0,0.0,1,Fog,fog,7,6306
+964,No Holiday,268.68,0.0,0.0,90,Mist,mist,4,618
+965,No Holiday,290.28,0.0,0.0,90,Rain,proximity shower rain,10,1759
+966,No Holiday,271.95,0.0,0.0,90,Snow,light snow,3,375
+967,No Holiday,266.29,0.0,0.0,1,Clear,sky is clear,4,6595
+968,No Holiday,281.6,0.0,0.0,20,Clouds,few clouds,3,3794
+969,No Holiday,271.88,0.0,0.0,90,Clouds,overcast clouds,11,1584
+970,No Holiday,294.07,0.0,0.0,90,Thunderstorm,thunderstorm,6,4175
+971,No Holiday,277.21,0.0,0.0,5,Clear,sky is clear,2,5367
+972,No Holiday,289.01,0.0,0.0,40,Clouds,scattered clouds,9,4948
+973,No Holiday,295.12,0.0,0.0,1,Clear,sky is clear,7,4523
+974,No Holiday,291.75,0.0,0.0,90,Drizzle,drizzle,7,5339
+975,No Holiday,271.89,0.0,0.0,90,Mist,mist,1,4304
+976,No Holiday,291.09,0.0,0.0,90,Mist,mist,6,880
+977,No Holiday,273.0,0.0,0.0,90,Snow,light snow,3,420
+978,No Holiday,274.89,0.0,0.0,90,Drizzle,light intensity drizzle,12,964
+979,No Holiday,260.41,0.0,0.0,75,Clouds,broken clouds,2,5646
+980,No Holiday,262.26,0.0,0.0,40,Mist,mist,3,2875
+981,No Holiday,278.65,0.0,0.0,1,Clear,sky is clear,10,1409
+982,No Holiday,289.36,0.0,0.0,1,Clear,sky is clear,6,380
+983,No Holiday,283.62,0.0,0.0,75,Rain,light rain,3,5673
+984,No Holiday,269.74,0.0,0.0,90,Snow,heavy snow,2,4600
+985,No Holiday,288.21,0.0,0.0,20,Clouds,few clouds,4,5959
+986,No Holiday,284.0,0.0,0.0,90,Rain,light rain,10,5525
+987,No Holiday,300.48,0.0,0.0,0,Clear,Sky is Clear,8,4229
+988,No Holiday,273.02,0.0,0.0,90,Mist,mist,1,815
+989,No Holiday,292.4,0.25,0.0,90,Rain,light rain,7,1290
+990,No Holiday,271.71,0.0,0.0,90,Clouds,overcast clouds,3,748
+991,No Holiday,279.93,0.0,0.0,75,Clouds,broken clouds,3,4837
+992,No Holiday,277.48,0.0,0.0,40,Clouds,scattered clouds,10,6621
+993,No Holiday,296.53,0.0,0.0,75,Clouds,broken clouds,6,6264
+994,No Holiday,289.58,0.0,0.0,40,Clouds,scattered clouds,9,5982
+995,No Holiday,296.494,0.0,0.0,68,Clouds,broken clouds,7,3435
+996,No Holiday,299.35,0.0,0.0,40,Clouds,scattered clouds,7,4875
+997,No Holiday,261.92,0.0,0.0,90,Clouds,overcast clouds,2,1537
+998,No Holiday,264.32,0.0,0.0,64,Clouds,broken clouds,12,5347
+999,No Holiday,289.68,0.0,0.0,76,Clouds,broken clouds,9,4787
+1000,No Holiday,276.43,0.0,0.0,75,Clouds,broken clouds,4,2003

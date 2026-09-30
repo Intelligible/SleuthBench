@@ -1,0 +1,88 @@
+{
+  "by_kind": {
+    "binary": [
+      "WeekStatus"
+    ],
+    "categorical": [
+      "CO2(tCO2)",
+      "Day_of_week",
+      "Load_Type",
+      "month"
+    ],
+    "id_no": [
+      "row_id"
+    ],
+    "regression": [
+      "Lagging_Current_Power_Factor",
+      "Lagging_Current_Reactive.Power_kVarh",
+      "Leading_Current_Power_Factor",
+      "Leading_Current_Reactive_Power_kVarh",
+      "NSM",
+      "Usage_kWh"
+    ]
+  },
+  "columns": {
+    "CO2(tCO2)": {
+      "dtype": "float",
+      "kind": "categorical",
+      "unique_count": 8
+    },
+    "Day_of_week": {
+      "dtype": "string",
+      "kind": "categorical",
+      "unique_count": 7
+    },
+    "Lagging_Current_Power_Factor": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 81
+    },
+    "Lagging_Current_Reactive.Power_kVarh": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 75
+    },
+    "Leading_Current_Power_Factor": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 26
+    },
+    "Leading_Current_Reactive_Power_kVarh": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 28
+    },
+    "Load_Type": {
+      "dtype": "string",
+      "kind": "categorical",
+      "unique_count": 3
+    },
+    "NSM": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 61
+    },
+    "Usage_kWh": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 82
+    },
+    "WeekStatus": {
+      "dtype": "string",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "month": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 12
+    },
+    "row_id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    }
+  },
+  "dataset": "steel_industry_data_1000.csv",
+  "target": "Usage_kWh"
+}

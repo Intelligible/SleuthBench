@@ -1,0 +1,35 @@
+# Example manual-questions config for SleuthBench.
+#
+# Build the instance with:
+#   uv run python src/manual_pipeline.py manual/example.yaml
+#
+# After that, run stages 4-5 as usual:
+#   uv run python src/eval_pipeline.py --models gpt-4o-mini --dataset bike_sharing_100_manual --injector manual --tools run_python --output data/results/eval_results_bike_sharing_100_manual_gpt-4o-mini.json
+#   uv run python src/grade_pipeline.py --input data/results/eval_results_bike_sharing_100_manual_gpt-4o-mini.json
+
+# Bucket name in data/instances/. Pick something that doesn't collide with
+# an existing standardized dataset to avoid confusion.
+dataset_name: bike_sharing_100_manual
+
+# CSV path. Resolved relative to this YAML's directory if not absolute.
+table: ../data/standardized/bike_sharing_100.csv
+
+# Target column. Must exist in the CSV.
+target: cnt
+
+# Hand-authored questions with their ground-truth answers.
+# `id` must be unique within this file AND must not collide with a
+# registered template_id (e.g. fc_nonmonotone_peak_v0). The tool will
+# refuse to build if it collides.
+#
+# `answer_format` must use an enum value from templates/template_schema.json.
+questions:
+  - id: manual_strongest_corr
+    question: "Which feature in the dataset has the strongest linear correlation with cnt? Return only the column name."
+    answer: registered
+    answer_format: column_name
+
+  - id: manual_workingday_effect
+    question: "On working days (workingday=1), is the median cnt higher or lower than on non-working days? Answer HIGHER or LOWER."
+    answer: HIGHER
+    answer_format: categorical

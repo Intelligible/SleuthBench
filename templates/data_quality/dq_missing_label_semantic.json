@@ -1,0 +1,38 @@
+{
+  "template_id": "dq_missing_label_semantic_v0",
+  "description": "Overwrites a small set of rows in one categorical feature with a missing-like marker drawn from a fixed lexicon (Unknown, Not reported, Not specified, ...). The feature starts with no missing-like labels, so the planted label is the unique category that semantically encodes missing/unknown/not-reported values.",
+  "category": "Data Quality",
+  "answer_format": "category_label",
+  "business_question": "Are there any labels in `{FEATURE}` that we need to pay attention to? If yes, return only the label. If no, return No.",
+  "ds_question": "Which category label in `{FEATURE}` appears to encode missing, unknown, or not-reported values? Return only the label.",
+
+  "slots": {
+    "MISSING_FRACTION": {
+      "type": "float",
+      "default": 0.05
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_missing_label_semantic",
+      "param_mapping": {
+        "inject_fraction": "{MISSING_FRACTION}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_count_by_kind",
+      "kind": "categorical",
+      "min": 1
+    }
+  ]
+}

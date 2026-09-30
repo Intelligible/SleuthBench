@@ -1,0 +1,51 @@
+{
+  "template_id": "fc_pairwise_compensatory_reversal_v0",
+  "description": "Injects a mixed-sign interaction. One condition has a positive individual effect, the other has a negative individual effect, and their combination has a positive interaction effect.",
+  "category": "Feature Contribution",
+  "answer_format": "column_pair",
+  "business_question": "Which pairs of features behave unexpectedly when considered together? Return the two column names as: column_a, column_b",
+  "ds_question": "What are the two features whose combination reverses the direction suggested by one individual feature? Return the two column names as: column_a, column_b",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 2
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 1.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_pairwise_interaction",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}",
+        "pattern": "compensatory_reversal"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 5
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

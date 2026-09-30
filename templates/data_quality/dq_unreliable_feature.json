@@ -1,0 +1,50 @@
+{
+  "template_id": "dq_unreliable_feature_v0",
+  "description": "Amplifies noise in one feature's relationship with the outcome, making its predictions highly uncertain.",
+  "category": "Data Quality",
+  "answer_format": "column_name",
+  "business_question": "For one column, {OUTCOME_COL} results stay fairly close together at one end of the column but become much more spread out at the other end. Which column shows this uneven level of consistency? Return a single column name.",
+  "ds_question": "Which feature's relationship with {OUTCOME_COL} is most unreliable — i.e., has the highest prediction uncertainty? Return a single column name.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "NOISE_MULTIPLIER": {
+      "type": "float",
+      "default": 3.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_unreliable_feature",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "noise_multiplier": "{NOISE_MULTIPLIER}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 5
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

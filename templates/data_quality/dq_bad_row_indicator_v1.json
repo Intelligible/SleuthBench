@@ -1,0 +1,45 @@
+{
+  "template_id": "dq_bad_row_indicator_v1",
+  "description": "Injects support-bounded outcome inconsistencies into 5% of rows and a 0/1 indicator that is validated as the uniquely best marker among same-prevalence binary candidates.",
+  "category": "Data Quality",
+  "answer_format": "column_name",
+  "business_question": "Among the 0/1 columns, one indicator's 1 values mark records whose {OUTCOME_COL} outcome is inconsistent with otherwise similar records, even though the outcome itself remains within the dataset's observed range. Which column is that indicator? Return a single column name.",
+  "ds_question": "Among the binary 0/1 columns, one indicator has 1 exactly on rows whose {OUTCOME_COL} outcome is conditionally inconsistent with otherwise similar records. The injected outcomes remain within the original target support. Which column is the indicator? Return a single column name.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["binary", "regression"],
+      "dtype_any_of": ["bool", "int", "float"],
+      "unique_count_min": 2
+    },
+    "BAD_FRACTION": {
+      "type": "float",
+      "default": 0.05
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_bad_row_indicator_v1",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "bad_fraction": "{BAD_FRACTION}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 2
+    }
+  ]
+}

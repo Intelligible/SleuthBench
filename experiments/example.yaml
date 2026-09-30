@@ -1,0 +1,83 @@
+# Example SleuthBench experiment config.
+# Run with: uv run python src/run_experiment.py experiments/example.yaml
+#
+# The runner drives the full pipeline end-to-end:
+#   phenomena -> validate -> answer -> eval -> grade
+
+# Top-level label; with `runs:`, each run's `name` drives its output filename.
+# Names and run IDs are normalized to NFC and must be portable path components
+# of at most 128 characters. Run names must be unique after case folding, and
+# run_id may not alias an existing namespace by case or normalized spelling.
+name: bike_sharing_100_example
+# Stable identifier written to generated manifests and every eval result.
+# Set this explicitly when repeated runs must remain distinguishable.
+# Defaults to `name` when omitted.
+run_id: bike_sharing_100_example_seed42
+
+seed: 42
+
+# Question wording rendered into each QA pair: `ds` (data-science framing,
+# the default) or `business` (business framing).
+question_type: ds
+
+# Dataset selection — set exactly one of `summary` or `summaries_dir`.
+summary: data/standardized/summaries/bike_sharing_100.json
+# summaries_dir: data/standardized/summaries
+
+# Optional storage roots.
+# instances_dir: data/instances
+# results_dir: data/results
+
+# Template filtering (optional). Omit to run all applicable templates.
+templates_dir: templates
+# templates:
+#   - fc_nonmonotone_peak_v0
+#   - fc_interaction_dominant_v0
+
+# Downstream filters are stage-specific: Validate uses a dataset substring and
+# exact injector names; Eval uses a dataset suffix and injector substrings.
+# Answer uses the selected, validated manifest batch. With `summary`, the
+# dataset filter defaults to the summary filename stem.
+# dataset_filter: bike_sharing_100
+# injector_filter:
+#   - fc_nonmonotone_peak
+
+# Default models inherited by any run that doesn't override `models:`.
+# Every effective eval run must get at least one model from one of those places.
+# Provider routing is defined by MODEL_FAMILIES in src/eval_pipeline.py.
+models:
+  - gpt-4o-mini
+
+columns_only: false
+table_in_prompt: false
+
+# Grader model (OpenAI).
+grader_model: gpt-4o-mini
+
+# Stage toggles reuse matching run-scoped artifacts when available.
+# `skip_phenomena` requires matching run-scoped manifests: the same run_id and
+# seed plus an exact generation fingerprint. A fresh Stage 1 with evaluation
+# enabled cannot skip validation or answer computation. Grading only consumes
+# eval output from this invocation; use grade_pipeline.py directly to re-grade
+# an existing result.
+skip_phenomena: false
+skip_validate: false
+skip_answer: false
+skip_eval: false
+skip_grade: false
+
+# Force re-run of validation instead of its idempotent skip. Overridden by
+# --force on the CLI.
+force: false
+
+# Stages 1-3 execute once; stages 4-5 execute for each entry in `runs:`.
+# Each run needs a unique portable name, may override the top-level models, and
+# has its own tools list, which defaults to [] with no top-level fallback.
+# Valid tools: load_data, run_python.
+runs:
+  # Intentional question-only/blind baseline: no tools and table_in_prompt=false.
+  - name: bike_sharing_100_bare
+    tools: []
+
+  - name: bike_sharing_100_rich
+    tools: [run_python]

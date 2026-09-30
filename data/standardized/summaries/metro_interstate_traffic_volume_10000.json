@@ -1,0 +1,76 @@
+{
+  "by_kind": {
+    "binary": [
+      "holiday"
+    ],
+    "categorical": [
+      "clouds_all",
+      "month",
+      "rain_1h",
+      "snow_1h",
+      "weather_description",
+      "weather_main"
+    ],
+    "id_no": [
+      "row_id"
+    ],
+    "regression": [
+      "temp",
+      "traffic_volume"
+    ]
+  },
+  "columns": {
+    "clouds_all": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 15
+    },
+    "holiday": {
+      "dtype": "string",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "month": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 12
+    },
+    "rain_1h": {
+      "dtype": "float",
+      "kind": "categorical",
+      "unique_count": 9
+    },
+    "row_id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    },
+    "snow_1h": {
+      "dtype": "float",
+      "kind": "categorical",
+      "unique_count": 1
+    },
+    "temp": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 97
+    },
+    "traffic_volume": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 98
+    },
+    "weather_description": {
+      "dtype": "string",
+      "kind": "categorical",
+      "unique_count": 18
+    },
+    "weather_main": {
+      "dtype": "string",
+      "kind": "categorical",
+      "unique_count": 9
+    }
+  },
+  "dataset": "metro_interstate_traffic_volume_10000.csv",
+  "target": "traffic_volume"
+}

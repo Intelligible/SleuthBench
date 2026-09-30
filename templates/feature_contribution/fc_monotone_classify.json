@@ -1,0 +1,50 @@
+{
+  "template_id": "fc_monotone_classify_v0",
+  "description": "Injects a non-monotone (direction-changing) relationship into one feature.",
+  "category": "Feature Contribution",
+  "answer_format": "column_name",
+  "business_question": "For most number-based columns, {OUTCOME_COL} generally keeps moving in one direction as the column value changes. Which column breaks that simple pattern most clearly? Return only the column name.",
+  "ds_question": "For each numeric feature, classify its relationship with {OUTCOME_COL} as MONOTONE (consistently increasing or decreasing) or NON-MONOTONE (changes direction at least once). Which feature has the most non-monotone relationship with the outcome? Return only the feature name.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "EFFECT_STRENGTH": {
+      "type": "float",
+      "default": 3.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "fc_monotone_classify",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "effect_strength": "{EFFECT_STRENGTH}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 3
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 3
+    }
+  ]
+}

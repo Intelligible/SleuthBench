@@ -1,0 +1,51 @@
+{
+  "template_id": "dq_categorical_target_outlier_v0",
+  "description": "Shifts the target of one populous category in a categorical feature by direction * shift_strength * sigma_y, leaving the labels untouched. That category becomes the group whose target mean stands out most from the rest.",
+  "category": "Data Quality",
+  "answer_format": "category_label",
+  "business_question": "Is there a category in `{FEATURE}` whose `{OUTCOME_COL}` values stand out from the other categories? Return only the category label.",
+  "ds_question": "Is there a category in `{FEATURE}` whose `{OUTCOME_COL}` values are unusually high or low compared with the other categories? Return only the category label.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "SHIFT_STRENGTH": {
+      "type": "float",
+      "default": 2.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_categorical_target_outlier",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "shift_strength": "{SHIFT_STRENGTH}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_count_by_kind",
+      "kind": "categorical",
+      "min": 1
+    },
+    {
+      "type": "min_count_by_kind",
+      "kind": "regression",
+      "min": 1
+    }
+  ]
+}

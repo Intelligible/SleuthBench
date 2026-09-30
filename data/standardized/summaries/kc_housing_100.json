@@ -1,0 +1,154 @@
+{
+  "by_kind": {
+    "binary": [
+      "waterfront"
+    ],
+    "categorical": [
+      "bedrooms",
+      "condition",
+      "date",
+      "floors",
+      "grade",
+      "view",
+      "yr_renovated"
+    ],
+    "id_no": [
+      "id",
+      "row_id"
+    ],
+    "regression": [
+      "Unnamed: 0",
+      "bathrooms",
+      "lat",
+      "long",
+      "price",
+      "sqft_above",
+      "sqft_basement",
+      "sqft_living",
+      "sqft_living15",
+      "sqft_lot",
+      "sqft_lot15",
+      "yr_built",
+      "zipcode"
+    ]
+  },
+  "columns": {
+    "Unnamed: 0": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 100
+    },
+    "bathrooms": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 12
+    },
+    "bedrooms": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 6
+    },
+    "condition": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 4
+    },
+    "date": {
+      "dtype": "datetime",
+      "kind": "categorical",
+      "unique_count": 82
+    },
+    "floors": {
+      "dtype": "float",
+      "kind": "categorical",
+      "unique_count": 4
+    },
+    "grade": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 8
+    },
+    "id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    },
+    "lat": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 98
+    },
+    "long": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 89
+    },
+    "price": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 89
+    },
+    "row_id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    },
+    "sqft_above": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 86
+    },
+    "sqft_basement": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 32
+    },
+    "sqft_living": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 86
+    },
+    "sqft_living15": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 82
+    },
+    "sqft_lot": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 92
+    },
+    "sqft_lot15": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 93
+    },
+    "view": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 5
+    },
+    "waterfront": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "yr_built": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 61
+    },
+    "yr_renovated": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 4
+    },
+    "zipcode": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 50
+    }
+  },
+  "dataset": "kc_housing_100.csv",
+  "target": "price"
+}

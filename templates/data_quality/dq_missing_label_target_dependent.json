@@ -1,0 +1,45 @@
+{
+  "template_id": "dq_missing_label_target_dependent_v0",
+  "description": "Anonymises a categorical feature (every level renamed to a neutral pseudo-label A, B, C, ...) and adds one extra neutral 'withheld' bucket label that collects the rows from one extreme (top or bottom q) of the target distribution. Because those rows were selected by the target, the bucket's mean target sits far from the rest — a not-missing-at-random (NMAR) signature — but nothing in the label name reveals which one it is.",
+  "category": "Data Quality",
+  "answer_format": "category_label",
+  "business_question": "Is there a category in `{FEATURE}` whose `{OUTCOME_COL}` values stand out from the other categories? Return only the category label.",
+  "ds_question": "The category labels in `{FEATURE}` have been anonymised. One category label encodes missing or unknown values. Which missing-like label shows evidence of target-dependent missingness with respect to `{OUTCOME_COL}`? Return only the label.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression", "binary"],
+      "unique_count_min": 2
+    },
+    "MISSING_FRACTION": {
+      "type": "float",
+      "default": 0.10
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_missing_label_target_dependent",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "q": "{MISSING_FRACTION}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_count_by_kind",
+      "kind": "categorical",
+      "min": 1
+    }
+  ]
+}

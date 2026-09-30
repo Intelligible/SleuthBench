@@ -1,0 +1,55 @@
+{
+  "template_id": "dq_conditional_bad_rows_v0",
+  "description": "Injects a broken-data or data-entry-error pattern in which a small subset of rows has target values that are not global outliers but are unusual conditional on their feature values.",
+  "category": "Data Quality",
+  "answer_format": "row_id_list",
+  "business_question": "There are {N_INJECT_SAMPLES} rows in this data with an unusual pattern in {OUTCOME_COL}. Return the row_id values as a comma-separated list.",
+  "ds_question": "Some rows have {OUTCOME_COL} values that are plausible globally but unusual given their feature values. Identify the {N_INJECT_SAMPLES} affected rows and return their row_id values as a comma-separated list.",
+
+  "slots": {
+    "OUTCOME_COL": {
+      "type": "column",
+      "source": "dataset.target",
+      "kind_any_of": ["regression"],
+      "dtype_any_of": ["int", "float"],
+      "unique_count_min": 10
+    },
+    "BAD_FRACTION": {
+      "type": "float",
+      "default": 0.02
+    },
+    "TAU": {
+      "type": "float",
+      "default": 6.0
+    }
+  },
+
+  "feature_pool": {
+    "exclude_target": true,
+    "exclude_kinds": ["id_no"],
+    "exclude_dtypes": ["empty"]
+  },
+
+  "phenomena": [
+    {
+      "injector": "dq_conditional_bad_rows",
+      "param_mapping": {
+        "outcome_col": "{OUTCOME_COL}",
+        "bad_fraction": "{BAD_FRACTION}",
+        "tau": "{TAU}"
+      }
+    }
+  ],
+
+  "requirements": [
+    {
+      "type": "min_feature_count",
+      "min": 3
+    },
+    {
+      "type": "min_count_by_dtype_any_of",
+      "dtypes": ["int", "float"],
+      "min": 2
+    }
+  ]
+}

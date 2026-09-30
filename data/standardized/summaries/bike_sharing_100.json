@@ -1,0 +1,124 @@
+{
+  "by_kind": {
+    "binary": [
+      "holiday",
+      "workingday",
+      "yr"
+    ],
+    "categorical": [
+      "dteday",
+      "hr",
+      "mnth",
+      "season",
+      "weathersit",
+      "weekday"
+    ],
+    "id_no": [
+      "row_id"
+    ],
+    "regression": [
+      "atemp",
+      "casual",
+      "cnt",
+      "hum",
+      "instant",
+      "registered",
+      "temp",
+      "windspeed"
+    ]
+  },
+  "columns": {
+    "atemp": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 37
+    },
+    "casual": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 56
+    },
+    "cnt": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 85
+    },
+    "dteday": {
+      "dtype": "datetime",
+      "kind": "categorical",
+      "unique_count": 97
+    },
+    "holiday": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "hr": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 24
+    },
+    "hum": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 49
+    },
+    "instant": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 100
+    },
+    "mnth": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 12
+    },
+    "registered": {
+      "dtype": "int",
+      "kind": "regression",
+      "unique_count": 82
+    },
+    "row_id": {
+      "dtype": "int",
+      "kind": "id_no",
+      "unique_count": 100
+    },
+    "season": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 4
+    },
+    "temp": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 33
+    },
+    "weathersit": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 3
+    },
+    "weekday": {
+      "dtype": "int",
+      "kind": "categorical",
+      "unique_count": 7
+    },
+    "windspeed": {
+      "dtype": "float",
+      "kind": "regression",
+      "unique_count": 15
+    },
+    "workingday": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    },
+    "yr": {
+      "dtype": "bool",
+      "kind": "binary",
+      "unique_count": 2
+    }
+  },
+  "dataset": "bike_sharing_100.csv",
+  "target": "cnt"
+}
